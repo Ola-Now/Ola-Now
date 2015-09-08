@@ -1,0 +1,32 @@
+<html>
+<head>
+
+            <meta property="zomatocom:location:latitude" content="12.9030861111"/>
+            <meta property="zomatocom:location:longitude" content="77.5857861111"/>
+	<script type="text/javascript" src="js_scraping.js"></script>
+	<script>
+function getLoc() { 
+   var metas = document.getElementsByTagName('meta'); 
+   for (i=0; i<metas.length; i++) {    
+	   if (metas[i].getAttribute("property") == "zomatocom:location:latitude") { 
+	   		alert(metas[i].getAttribute("content"));
+		}
+		else if (metas[i].getAttribute("property") == "zomatocom:location:longitude") { 
+	   		alert(metas[i].getAttribute("content"));
+		}
+	}
+   // for (i=0; i<metas.length; i++) { 
+   //    if (metas[i].getAttribute("property") == "video") { 
+   //       return metas[i].getAttribute("content"); 
+   //    } 
+   // } 
+
+   //  return "";
+} 
+
+	</script>
+</head>
+<body onload="getLoc()">
+
+</body>
+</html>

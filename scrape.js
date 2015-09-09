@@ -1,12 +1,23 @@
-function getLoc() { 
+function getDestinationCordinates() { 
+    // Get div to display cordinates
+    var div = document.getElementById('display');
     // Get all meta tags, check property and store lat/long into JS vars
     var metas = document.getElementsByTagName('meta'); 
     for (i=0; i<metas.length; i++) {    
         if (metas[i].getAttribute("property") == "zomatocom:location:latitude") { 
-                    alert(metas[i].getAttribute("content"));
+                    var lat = metas[i].getAttribute("content");
+                    // alert(lat);
+                    var content = document.createTextNode("Latitude: "+lat);
+                    div.appendChild(content);
             }
             else if (metas[i].getAttribute("property") == "zomatocom:location:longitude") { 
-                    alert(metas[i].getAttribute("content"));
+                    var long = metas[i].getAttribute("content");
+                    // alert(long);
+                    
+                    // All this work just for a br tag :( because createTextNode does not allow <br/>
+                    div.appendChild(document.createElement("br"));
+                    var content = document.createTextNode("Longitude: "+long);
+                    div.appendChild(content);
             }
     }
 } 

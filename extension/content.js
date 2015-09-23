@@ -32,5 +32,7 @@ setDestinationCordinates();
 
 chrome.runtime.sendMessage({
     'latitude' : latitude,
-    'longitude' : longitude
+    'longitude' : longitude,
+    'myLat': 12.11,
+    'myLong': 99.11
 });

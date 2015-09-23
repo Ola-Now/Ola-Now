@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px; 
+            }
+            input, textarea { 
+                width: 420px; 
+            }
+            input#book { 
+                font-weight: bold; width: auto; 
+            }
+        </style>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <form id="bookCab">
+            <p><label for="latitude">Latitude</label><br />
+            <input type="text" id="latitude" name="latitude" size="50" value="" /></p>
+            <p><label for="longitude">Longitude</label><br />
+            <input type="text" id="longitude" name="longitude" size="50" value="" /></p>
+            <p>
+                <input id="book" type="submit" value="GET CABS" />
+                <span id="status-display"></span>
+            </p>
+        </form>
+    </body>
+</html>

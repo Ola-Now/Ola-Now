@@ -1,6 +1,20 @@
 var latitude = null;
 var longitude = null;
 
+function getUserLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var myLat = position.coords.latitude;
+    var myLong = position.coords.longitude;
+    alert("User location:\n"+myLat+"\n"+myLong);
+}
+getUserLocation();
 
 var demo = document.getElementById("demo");
 function setDestinationCordinates() { 
@@ -16,25 +30,9 @@ function setDestinationCordinates() {
 } 
 setDestinationCordinates();
 
-
-function getUserLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-    chrome.runtime.sendMessage({
+chrome.runtime.sendMessage({
     'latitude' : latitude,
     'longitude' : longitude,
     'myLat': 12.11,
     'myLong': 99.11
-})
-    );
-    } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function showPosition(position) {
-    var myLat = position.coords.latitude;
-    var myLong = position.coords.longitude;
-    alert("User location:\n"+myLat+"\n"+myLong);
-}
-getUserLocation();
+});

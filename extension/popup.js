@@ -3,6 +3,9 @@
 function onPageDetailsReceived(pageDetails)  { 
     document.getElementById('latitude').value = pageDetails.latitude; 
     document.getElementById('longitude').value = pageDetails.longitude;
+    document.getElementById('myLat').value = pageDetails.myLat; 
+    document.getElementById('myLong').value = pageDetails.myLong;
+
 } 
 
 // Global reference to the status display SPAN

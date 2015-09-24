@@ -27,6 +27,8 @@
     "activeTab",
      "tabs",
     "https://ajax.googleapis.com/",
-    "https://www.zomato.com/*"
+    "https://www.zomato.com/*",
+    "cookies",
+    "*://*.uber.com"
   ]
 }

@@ -63,7 +63,22 @@ function bookCab() {
 
 // When the popup HTML has loaded
 window.addEventListener('load', function(evt) {
-    chrome.cookies.getAll({"name": "logged_in", "domain": ".uber.com"}, function(cookie) { alert("Cookie name: " + cookie[0].name + "\nCookie value: " + cookie[0].value); } );
+
+    // get cookie named logged_in for domain .uber.com
+    chrome.cookies.getAll({"name": "logged_in", "domain": ".uber.com"},
+        // callback function to be called when getAll() returns
+        function(cookie) {
+            // if cookie exists and it's value is true
+            if ((cookie.length) && (!cookie[0].value.localeCompare("true"))) {    // localeCompare returns 0 when strings are equal
+                alert("logged in");
+            }
+            else{
+                alert("logged out");
+                chrome.tabs.create({'url': 'https://ola-app.herokuapp.com/', }, function(window) {});
+            }
+        } 
+    );
+    
     // Cache a reference to the status display SPAN
     console.log("in popup.js page");
     statusDisplay = document.getElementById('status-display');

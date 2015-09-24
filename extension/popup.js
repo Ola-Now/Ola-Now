@@ -63,6 +63,7 @@ function bookCab() {
 
 // When the popup HTML has loaded
 window.addEventListener('load', function(evt) {
+    chrome.cookies.getAll({"name": "logged_in", "domain": ".uber.com"}, function(cookie) { alert("Cookie name: " + cookie[0].name + "\nCookie value: " + cookie[0].value); } );
     // Cache a reference to the status display SPAN
     console.log("in popup.js page");
     statusDisplay = document.getElementById('status-display');

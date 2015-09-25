@@ -4,8 +4,8 @@ function onPageDetailsReceived(pageDetails)  {
     document.getElementById('latitude').value = pageDetails.latitude; 
     document.getElementById('longitude').value = pageDetails.longitude;
     document.getElementById('myLat').value = pageDetails.myLat; 
-    myLat=pageDetails.myLat;
     document.getElementById('myLong').value = pageDetails.myLong;
+    myLat=pageDetails.myLat;
     myLong=pageDetails.myLong;
 
     // get cookie named logged_in for domain .uber.com
@@ -96,9 +96,36 @@ function getProducts(){
             statusDisplay.innerHTML = '';
             if (xhr.status == 200) {
                 // If it was a success, close the popup after a short delay
-                statusDisplay.innerHTML=JSON.parse(xhr.responseText).products[0].capacity;
                 //alert(JSON.parse(xhr.responseText).products[0].capacity);
                 //window.setTimeout(window.close, 1000);
+                parsedResponse = JSON.parse(xhr.responseText);
+                products.innerHTML = "<h4>Cabs available</h4>";
+                var divContent = "";
+
+                for(i=0;i < parsedResponse.products.length; i++)
+                {
+
+                    //<button id='booking' type='button' value='abcdef'>Book this!</button> </div>
+                    divContent = "<div class='products_results'><p><b>" + parsedResponse.products[i].display_name + "</b>";
+                    divContent += "<br/>Price/km: " + parsedResponse.products[i].price_details.cost_per_distance;
+                    divContent += "<br/>Minimum fare: " + parsedResponse.products[i].price_details.minimum + "</p>";
+                    divContent += "<button type='button' class='booking' value='" + parsedResponse.products[i].product_id + "'>Book this!</button> </div>"
+                    products.innerHTML += divContent;
+                    //products.innerHTML += parsedResponse.products[i].product_id for booking;
+                }
+
+
+                var bookbutton = document.getElementsByClassName("booking");
+                //alert(bookbutton.length);
+                for(i=0; i<bookbutton.length; i++){                    
+                    //alert("Adding listener to " + bookbutton[i].value);
+                    //alert("Button #" + i + " " + bookbutton[i]);
+                    bookbutton[i].addEventListener("click", function() {
+                        alert("Booked!" + bookbutton[i].value);
+                    });
+                }
+
+
             } else {
                 // Show what went wrong
                 statusDisplay.innerHTML = 'Error saving: ' + xhr.statusText;
@@ -113,10 +140,10 @@ function getProducts(){
 
 // When the popup HTML has loaded
 window.addEventListener('load', function(evt) {
-    
     // Cache a reference to the status display SPAN
     console.log("in popup.js page");
     statusDisplay = document.getElementById('status-display');
+    products = document.getElementById('products');
     // Handle the bookmark form submit event with our addBookmark function
     document.getElementById('bookCab').addEventListener('submit', bookCab);
     // Get the event page
@@ -126,4 +153,5 @@ window.addEventListener('load', function(evt) {
         // content.js into the current tab's HTML
         eventPage.getPageDetails(onPageDetailsReceived);
     });
+
 });

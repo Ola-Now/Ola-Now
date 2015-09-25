@@ -6,7 +6,7 @@
         min-width: 420px; 
         overflow-x: hidden; 
         font-family: Arial, sans-serif; 
-        font-size: 12px; 
+        font-size: 14px; 
     }
     input, textarea { 
         width: 420px; 
@@ -14,6 +14,9 @@
     input#book { 
         font-weight: bold; width: auto; 
     }
+    div#products { margin: 10px 0 0; border: 1px solid #ddd; padding: 0 10px 15px;  }
+    div#products h3 {}
+    .products_results {background: #ccc;}
 </style>
 <script src="popup.js"></script>
 </head>
@@ -39,5 +42,7 @@
     </p>
     </fieldset>
 </form>
+<div id="products"></div>
+
 </body>
 </html>

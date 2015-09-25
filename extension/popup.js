@@ -17,7 +17,7 @@ function onPageDetailsReceived(pageDetails)  {
                 //alert("logged in");
                 var product_result=getProducts();
                 //alert(product_result);
-                statusDisplay.innerHTML=product_result;
+                //statusDisplay.innerHTML=product_result;
             }
             else{
                 alert("logged out");
@@ -97,7 +97,7 @@ function getProducts(){
             if (xhr.status == 200) {
                 // If it was a success, close the popup after a short delay
                 statusDisplay.innerHTML=JSON.parse(xhr.responseText).products[0].capacity;
-                alert(JSON.parse(xhr.responseText).products[0].capacity);
+                //alert(JSON.parse(xhr.responseText).products[0].capacity);
                 //window.setTimeout(window.close, 1000);
             } else {
                 // Show what went wrong

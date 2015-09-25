@@ -94,7 +94,7 @@ def demo():
     return render_template('demo.html', token=session.get('access_token'))
 
 
-@app.route('/products', methods=['GET'])
+@app.route('/products', methods=['POST'])
 def products():
     """Example call to the products endpoint.
 

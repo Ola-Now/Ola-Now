@@ -100,10 +100,11 @@ def products():
 
     Returns all the products currently available in San Francisco.
     """
+    post_json=request.get_json(force=True)
     url = config.get('base_uber_url') + 'products'
     params = {
-        'latitude': config.get('start_latitude'),
-        'longitude': config.get('start_longitude'),
+        'latitude': post_json['start_latitude'],
+        'longitude': post_json['start_longitude'],
     }
 
     response = app.requests_session.get(
@@ -114,11 +115,12 @@ def products():
 
     if response.status_code != 200:
         return 'There was an error', response.status_code
-    return render_template(
-        'results.html',
-        endpoint='products',
-        data=response.text,
-    )
+    # return render_template(
+    #     'results.html',
+    #     endpoint='products',
+    #     data=response.text,
+    # )
+    return response.text;
 
 
 @app.route('/time', methods=['GET'])

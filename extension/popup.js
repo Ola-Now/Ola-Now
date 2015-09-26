@@ -129,7 +129,7 @@ function getProducts(lat,long){
 
 
                 var bookbutton = document.getElementsByClassName("booking");
-                var bookbuttons = document.getElementById("booking1");
+                
                 //alert(bookbutton.length); 
                 // for(i=0; i<bookbutton.length; i++){                    
                 //     //alert("Adding listener to " + bookbutton[i].value);
@@ -139,10 +139,10 @@ function getProducts(lat,long){
                 //     },false);
                 // }
 
-                //bookbutton[0].addEventListener("click", testAlert, false);
-                // bookbutton[1].addEventListener("click", testAlert, false);
-                // bookbutton[2].addEventListener("click", testAlert, false);
-                // bookbutton[3].addEventListener("click", testAlert, false);
+                bookbutton[0].addEventListener("click", testAlert, false);
+                bookbutton[1].addEventListener("click", testAlert, false);
+                bookbutton[2].addEventListener("click", testAlert, false);
+                bookbutton[3].addEventListener("click", testAlert, false);
 
             } else {
                 // Show what went wrong

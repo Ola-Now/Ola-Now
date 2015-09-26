@@ -21,28 +21,28 @@
 <script src="popup.js"></script>
 </head>
 <body>
-<form id="bookCab">
-    <fieldset>
-    <legend>User</legend>
-    <p><label for="latitude">Latitude</label><br />
-    <input type="text" id="myLat" name="latitude" size="50" value="" /></p>
-    <p><label for="longitude">Longitude</label><br />
-    <input type="text" id="myLong" name="longitude" size="50" value="" /></p>
-    </fieldset>
+<div id="container">
+    <form id="bookCab">
+        <fieldset>
+        <legend>User</legend>
+        <p><label for="latitude">Latitude</label><br />
+        <input type="text" id="myLat" name="latitude" size="50" value="" /></p>
+        <p><label for="longitude">Longitude</label><br />
+        <input type="text" id="myLong" name="longitude" size="50" value="" /></p>
+        </fieldset>
 
-    <fieldset>
-    <legend>Destination</legend>
-    <p><label for="latitude">Latitude</label><br />
-    <input type="text" id="latitude" name="latitude" size="50" value="" /></p>
-    <p><label for="longitude">Longitude</label><br />
-    <input type="text" id="longitude" name="longitude" size="50" value="" /></p>
-    <p>
-        <input id="book" type="submit" value="Book an Ola!" />
-        <span id="status-display"></span>
-    </p>
-    </fieldset>
-</form>
-<div id="products"></div>
-
+        <fieldset>
+        <legend>Destination</legend>
+        <p><label for="latitude">Latitude</label><br />
+        <input type="text" id="latitude" name="latitude" size="50" value="" /></p>
+        <p><label for="longitude">Longitude</label><br />
+        <input type="text" id="longitude" name="longitude" size="50" value="" /></p>
+        <p>
+            <span id="status-display"></span>
+        </p>
+        </fieldset>
+    </form>
+    <div id="products"></div>
+</div>
 </body>
 </html>

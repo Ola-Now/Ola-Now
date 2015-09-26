@@ -1,11 +1,6 @@
 // Global reference to the status display SPAN
 var statusDisplay = null;
 
-function testAlert(){
-
-    alert("Booked cab! :)");
-}
-
 // This callback function is called when the content script has been 
 // injected and returned its results
 function onPageDetailsReceived(pageDetails)  { 
@@ -49,10 +44,7 @@ function cancelCab() {
         if (xhr.readyState == 4) {
             statusDisplay.innerHTML = '';
             if (xhr.status == 200) {
-                // If it was a success, close the popup after a short delay
-                //alert(JSON.parse(xhr.responseText).products[0].capacity);
-                //window.setTimeout(window.close, 1000);
-
+                // If it was a success
                 parsedResponse = JSON.parse(xhr.responseText);
                 container.innerHTML = "";
                 var divContent = parsedResponse.text;
@@ -67,11 +59,8 @@ function cancelCab() {
     
     // Send the request and set status
     xhr.send();
-
 }
 
-
-// POST the data to the server using XMLHttpRequest
 function bookCab() {
     var postUrl = 'http://localhost/book?category=sedan&myLat=' + myLat + '&myLong=' + myLong ;
     var xhr = new XMLHttpRequest();
@@ -83,22 +72,17 @@ function bookCab() {
         if (xhr.readyState == 4) {
             statusDisplay.innerHTML = '';
             if (xhr.status == 200) {
-                // If it was a success, close the popup after a short delay
-                //alert(JSON.parse(xhr.responseText).products[0].capacity);
-                //window.setTimeout(window.close, 1000);
-
+                // If it was a success
                 parsedResponse = JSON.parse(xhr.responseText);
                 container.innerHTML = "";
                 var divContent = "";
-
-                var crn = parsedResponse.crn;
 
                 divContent = "<div class='products_results" + i + "'><p>" + "Driver name: " +parsedResponse.driver_name;
                 divContent += "<br/>Driver number: " + parsedResponse.driver_number;
                 divContent += "<br/>Cab number: " + parsedResponse.cab_number;
                 divContent += "<br/>ETA: " + parsedResponse.eta + " mins";
                 //divContent += "<br/><button type='button' id='track' value='" + crn + "'>Track ride</button>"
-                divContent += "<button type='button' id='cancel' value='" + crn + "'>Cancel ride</button>"
+                divContent += "<button type='button' id='cancel' value='" + parsedResponse.crn + "'>Cancel ride</button>"
                 divContent += "</div>";
 
                 container.innerHTML += divContent;
@@ -132,17 +116,13 @@ function getProducts(lat,long){
         if (xhr.readyState == 4) {
             statusDisplay.innerHTML = '';
             if (xhr.status == 200) {
-                // If it was a success, close the popup after a short delay
-                //alert(JSON.parse(xhr.responseText).products[0].capacity);
-                //window.setTimeout(window.close, 1000);
+                // If it was a success
                 parsedResponse = JSON.parse(xhr.responseText);
                 products.innerHTML = "<h4>Cabs available</h4>";
                 var divContent = "";
 
                 for(i=0;i < parsedResponse.categories.length; i++)
                 {
-
-                    //<button id='booking' type='button' value='abcdef'>Book this!</button> </div>
 
                     divContent = "<div class='products_results" + i + "'><p>" + parsedResponse.categories[i].id;
                     divContent += "<br/>ETA: " + parsedResponse.categories[i].eta;
@@ -152,27 +132,10 @@ function getProducts(lat,long){
                     divContent += "<br/>Travel time: " + parsedResponse.ride_estimate[i].travel_time_in_minutes;
                     divContent += "<br/>Fare estimate: " + parsedResponse.ride_estimate[i].amount_min + " - " + parsedResponse.ride_estimate[i].amount_max;
                     divContent += "<br/><button type='button' id='booking1' class='booking' value='" + parsedResponse.categories[i].id + "'>Book this!</button> </div>"
-
-                    // divContent = "<div class='products_results" + i + "'><p><b>" + parsedResponse.categories[i].display_name + "</b>";
-                    // divContent += "<br/>Price/km: " + parsedResponse.categories[i].price_details.cost_per_distance;
-                    // divContent += "<br/>Minimum fare: " + parsedResponse.products[i].price_details.minimum + "</p>";
-                    // divContent += "<button type='button' class='booking' value='" + parsedResponse.products[i].product_id + "'>Book this!</button> </div>"
                     products.innerHTML += divContent;
-                    //products.innerHTML += parsedResponse.products[i].product_id for booking;
                 }
 
-
-                var bookbutton = document.getElementsByClassName("booking");
-                
-                //alert(bookbutton.length); 
-                // for(i=0; i<bookbutton.length; i++){                    
-                //     //alert("Adding listener to " + bookbutton[i].value);
-                //     //alert("Button #" + i + " " + bookbutton[i]);
-                //     bookbutton[i].addEventListener("click", function() {
-                //         alert("Booked!" + bookbutton[i].value);
-                //     },false);
-                // }
-
+                var bookbutton = document.getElementsByClassName("booking"); 
                 bookbutton[0].addEventListener("click", bookCab, false);
                 bookbutton[1].addEventListener("click", bookCab, false);
                 bookbutton[2].addEventListener("click", bookCab, false);
@@ -193,12 +156,10 @@ function getProducts(lat,long){
 // When the popup HTML has loaded
 window.addEventListener('load', function(evt) {
     // Cache a reference to the status display SPAN
-    console.log("in popup.js page");
     statusDisplay = document.getElementById('status-display');
     products = document.getElementById('products');
     container = document.getElementById('container');
-    // Handle the bookmark form submit event with our addBookmark function
-    document.getElementById('bookCab').addEventListener('submit', bookCab);
+
     // Get the event page
     chrome.runtime.getBackgroundPage(function(eventPage) {
         // Call the getPageInfo function in the event page, passing in 

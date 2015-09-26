@@ -4,9 +4,7 @@ function onPageDetailsReceived(pageDetails)  {
     document.getElementById('latitude').value = pageDetails.latitude; 
     document.getElementById('longitude').value = pageDetails.longitude;
     document.getElementById('myLat').value = pageDetails.myLat; 
-    myLat=pageDetails.myLat;
     document.getElementById('myLong').value = pageDetails.myLong;
-    myLong=pageDetails.myLong;
 
     // get cookie named logged_in for domain .uber.com
     chrome.cookies.getAll({"name": "logged_in", "domain": ".uber.com"},
@@ -15,7 +13,7 @@ function onPageDetailsReceived(pageDetails)  {
             // if cookie exists and it's value is true
             if ((cookie.length) && (!cookie[0].value.localeCompare("true"))) {    // localeCompare returns 0 when strings are equal
                 //alert("logged in");
-                var product_result=getProducts();
+                var product_result=getProducts(pageDetails.myLat,pageDetails.myLong);
                 //alert(product_result);
                 //statusDisplay.innerHTML=product_result;
             }
@@ -84,7 +82,7 @@ function bookCab() {
     //statusDisplay.innerHTML = 'Saving...';
 }
 
-function getProducts(){
+function getProducts(lat,long){
     var postUrl = 'http://localhost:7000/products';
     var xhr = new XMLHttpRequest();
     xhr.open('POST', postUrl, false);
@@ -107,7 +105,7 @@ function getProducts(){
     };
 
     // Send the request and set status
-    xhr.send(JSON.stringify({"start_latitude":12.957067,"start_longitude":77.699449}));
+    xhr.send(JSON.stringify({"start_latitude":lat,"start_longitude":long}));
 
 }
 

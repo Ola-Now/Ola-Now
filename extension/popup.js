@@ -106,26 +106,31 @@ function getProducts(){
                 {
 
                     //<button id='booking' type='button' value='abcdef'>Book this!</button> </div>
-                    divContent = "<div class='products_results'><p><b>" + parsedResponse.products[i].display_name + "</b>";
+                    divContent = "<div class='products_results" + i + "'><p><b>" + parsedResponse.products[i].display_name + "</b>";
                     divContent += "<br/>Price/km: " + parsedResponse.products[i].price_details.cost_per_distance;
                     divContent += "<br/>Minimum fare: " + parsedResponse.products[i].price_details.minimum + "</p>";
-                    divContent += "<button type='button' class='booking" + i + "' value='" + parsedResponse.products[i].product_id + "'>Book this!</button> </div>"
+                    divContent += "<button type='button' class='booking' value='" + parsedResponse.products[i].product_id + "'>Book this!</button> </div>"
                     products.innerHTML += divContent;
                     //products.innerHTML += parsedResponse.products[i].product_id for booking;
                 }
-                
-                //alert(parsedResponse.products.length); 
-                for(i=0; i< parsedResponse.products.length; i++){
-                    (function(i) {
-                        //alert("Adding listener to " + bookbutton[i].value);
-                        //alert("Button #" + i + " " + bookbutton[i]);
-                            document.getElementById("booking"+i).onclick = function () {
-                            alert("Booked!" + bookbutton[i].value);
-                        };
-                    })(i);
+
+
+                var bookbutton = document.getElementsByClassName("booking");
+                //alert(bookbutton.length); 
+                // for(i=0; i<bookbutton.length; i++){                    
+                //     //alert("Adding listener to " + bookbutton[i].value);
+                //     //alert("Button #" + i + " " + bookbutton[i]);
+                //     bookbutton[i].addEventListener("click", function() {
+                //         alert("Booked!" + bookbutton[i].value);
+                //     },false);
+                // }
+                function testAlert(){
+                    alert("done");
                 }
-
-
+                bookbutton[0].addEventListener("click", testAlert());
+                bookbutton[1].addEventListener("click", testAlert());
+                bookbutton[2].addEventListener("click", testAlert());
+                bookbutton[3].addEventListener("click", testAlert());
 
             } else {
                 // Show what went wrong

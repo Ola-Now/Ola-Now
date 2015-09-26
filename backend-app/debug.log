@@ -124,3 +124,20 @@ INFO: 2015-09-27 00:52:05,904 6c6fa9eab0134ee0818dd7d7b87885f1
 INFO: 2015-09-27 00:52:06,295 Starting new HTTP connection (1): sandbox-t.olacabs.com
 DEBUG: 2015-09-27 00:52:08,153 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 159
 INFO: 2015-09-27 00:52:08,156 127.0.0.1 - - [27/Sep/2015 00:52:08] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 01:52:25,659  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 01:52:25,689  * Restarting with reloader
+INFO: 2015-09-27 02:21:37,214  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 02:21:37,276  * Restarting with reloader
+INFO: 2015-09-27 02:24:45,369  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 02:24:45,369  * Restarting with reloader
+INFO: 2015-09-27 02:25:31,210 127.0.0.1 - - [27/Sep/2015 02:25:31] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 02:25:50,219 127.0.0.1 - - [27/Sep/2015 02:25:50] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 02:25:51,474 in save token, token : 4e9aeb8ea2624264bb07ad9c8aaa434e
+INFO: 2015-09-27 02:25:51,474 after assigning to sesion, token :4e9aeb8ea2624264bb07ad9c8aaa434e
+INFO: 2015-09-27 02:25:51,475 127.0.0.1 - - [27/Sep/2015 02:25:51] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 02:25:54,999 4e9aeb8ea2624264bb07ad9c8aaa434e
+INFO: 2015-09-27 02:25:55,021 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 02:25:57,703 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 159
+INFO: 2015-09-27 02:25:57,707 127.0.0.1 - - [27/Sep/2015 02:25:57] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+DEBUG: 2015-09-27 02:27:02,253 "GET /v1/bookings/cancel?crn=1159 HTTP/1.1" 200 145
+INFO: 2015-09-27 02:27:02,256 127.0.0.1 - - [27/Sep/2015 02:27:02] "GET /cancel?crn=1159 HTTP/1.1" 200 -

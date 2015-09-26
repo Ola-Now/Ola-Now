@@ -30,8 +30,8 @@ with open('config.json') as f:
 def generate_oauth_service():
     """Prepare the OAuth2Service that is used to make requests later."""
     return OAuth2Service(
-        client_id=os.environ.get('UBER_CLIENT_ID'),
-        client_secret=os.environ.get('UBER_CLIENT_SECRET'),
+        #client_id=os.environ.get('UBER_CLIENT_ID'),
+        #client_secret=os.environ.get('UBER_CLIENT_SECRET'),
         name=config.get('name'),
         authorize_url=config.get('authorize_url'),
         access_token_url=config.get('access_token_url'),
@@ -63,7 +63,7 @@ def signup():
         'response_type': 'token',
         'client_id' : 'YTliMWNlYTUtYmRmYy00OTA1LWE1Y2YtMjdiMjljNGY4OTZj',
         #'redirect_uri': get_redirect_uri(request),
-        'redirect_uri': 'http://localhost:7000/submit&scope=profile%20booking&state=state123'
+        'redirect_uri': 'http://localhost/submit&scope=profile%20booking&state=state123'
         #'scopes': ','.join(config.get('scopes')),
     }
     url = "http://sandbox-t.olacabs.com/oauth2/authorize?response_type=token&client_id=YTliMWNlYTUtYmRmYy00OTA1LWE1Y2YtMjdiMjljNGY4OTZj&redirect_uri=http://localhost/team56&scope=profile%20booking&state=state123"
@@ -112,6 +112,23 @@ def book():
         'X-APP-TOKEN': config.get('x_app_token'),
         'Content-Type': 'application/json',
         'Authorization': 'Bearer %s' % session.get('access_token'),
+    }
+    response = app.requests_session.get(
+        url,
+        headers=headers,
+        params=params,
+    )
+    return response.text
+
+@app.route('/cancel', methods=['GET'])
+def cancel():
+    url = "http://sandbox-t.olacabs.com/v1/bookings/cancel"
+    params = {
+        'crn': request.args['crn']
+    }
+    headers={
+        'X-APP-TOKEN': config.get('x_app_token'),
+        'Authorization': 'Bearer %s' % session.get('access_token')
     }
     response = app.requests_session.get(
         url,
@@ -180,7 +197,7 @@ def time():
 
     Returns the time estimates from the given lat/lng given below.
     """
-    url = config.get('base_uber_url') + 'estimates/time'
+    url = config.get('base_ola_url') + 'estimates/time'
     params = {
         'start_latitude': config.get('start_latitude'),
         'start_longitude': config.get('start_longitude'),
@@ -207,7 +224,7 @@ def price():
 
     Returns the time estimates from the given lat/lng given below.
     """
-    url = config.get('base_uber_url') + 'estimates/price'
+    url = config.get('base_ola_url') + 'estimates/price'
     params = {
         'start_latitude': config.get('start_latitude'),
         'start_longitude': config.get('start_longitude'),
@@ -233,7 +250,7 @@ def price():
 @app.route('/history', methods=['GET'])
 def history():
     """Return the last 5 trips made by the logged in user."""
-    url = config.get('base_uber_url_v1_1') + 'history'
+    url = config.get('base_ola_url_v1_1') + 'history'
     params = {
         'offset': 0,
         'limit': 5,
@@ -257,7 +274,7 @@ def history():
 @app.route('/me', methods=['GET'])
 def me():
     """Return user information including name, picture and email."""
-    url = config.get('base_uber_url') + 'me'
+    url = config.get('base_ola_url') + 'me'
     response = app.requests_session.get(
         url,
         headers=generate_ride_headers(session.get('access_token')),

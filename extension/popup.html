@@ -5,6 +5,7 @@
     body { 
         min-width: 420px; 
         overflow-x: hidden; 
+        line-height: 20px;
         font-family: Arial, sans-serif; 
         font-size: 14px; 
     }
@@ -14,29 +15,16 @@
     input#book { 
         font-weight: bold; width: auto; 
     }
-    div#products { margin: 10px 0 0; border: 1px solid #ddd; padding: 0 10px 15px;  }
+    div#container {padding: 0 10px 0;}
+    div#products { border-top: 1px solid #ddd; padding: 0 10px 15px;  }
     div#products h3 {}
-    .products_results {background: #ccc;}
+    .products_results {}
 </style>
 <script src="popup.js"></script>
 </head>
 <body>
 <div id="container">
-    <form id="bookCab">
-        <fieldset>
-        <legend>User</legend>
-        <p><label for="latitude">Latitude</label><br />
-        <input type="text" id="myLat" name="latitude" size="50" value="" /></p>
-        <p><label for="longitude">Longitude</label><br />
-        <input type="text" id="myLong" name="longitude" size="50" value="" /></p>
-        </fieldset>
-
-        <fieldset>
-        <legend>Destination</legend>
-        <p><label for="latitude">Latitude</label><br />
-        <input type="text" id="latitude" name="latitude" size="50" value="" /></p>
-        <p><label for="longitude">Longitude</label><br />
-        <input type="text" id="longitude" name="longitude" size="50" value="" /></p>
+        <p id="destination-info"></p>
         <p>
             <span id="status-display"></span>
         </p>

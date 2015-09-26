@@ -1,0 +1,126 @@
+INFO: 2015-09-26 23:53:38,536  * Detected change in 'app.py', reloading
+INFO: 2015-09-26 23:53:44,772  * Detected change in 'app.py', reloading
+INFO: 2015-09-26 23:54:05,098  * Detected change in 'app.py', reloading
+INFO: 2015-09-26 23:54:18,399  * Detected change in 'app.py', reloading
+INFO: 2015-09-26 23:54:37,028 127.0.0.1 - - [26/Sep/2015 23:54:37] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-26 23:54:52,156 127.0.0.1 - - [26/Sep/2015 23:54:52] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-26 23:54:55,076 token :asdsa
+INFO: 2015-09-26 23:54:55,079 127.0.0.1 - - [26/Sep/2015 23:54:55] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-26 23:57:34,193 127.0.0.1 - - [26/Sep/2015 23:57:34] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-26 23:57:46,067 127.0.0.1 - - [26/Sep/2015 23:57:46] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-26 23:58:07,989 token :asdsa
+INFO: 2015-09-26 23:58:07,991 127.0.0.1 - - [26/Sep/2015 23:58:07] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-26 23:58:37,813 127.0.0.1 - - [26/Sep/2015 23:58:37] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-26 23:58:48,618 127.0.0.1 - - [26/Sep/2015 23:58:48] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-26 23:58:52,634 token :asdsa
+INFO: 2015-09-26 23:58:52,636 127.0.0.1 - - [26/Sep/2015 23:58:52] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-26 23:59:20,555 127.0.0.1 - - [26/Sep/2015 23:59:20] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-26 23:59:30,303 127.0.0.1 - - [26/Sep/2015 23:59:30] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-26 23:59:35,141 token :asdsa
+INFO: 2015-09-26 23:59:35,143 127.0.0.1 - - [26/Sep/2015 23:59:35] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 00:00:19,903 127.0.0.1 - - [27/Sep/2015 00:00:19] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:00:35,349 127.0.0.1 - - [27/Sep/2015 00:00:35] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:00:35,440 token :29906a2004924c90945e60a88ed63809
+INFO: 2015-09-27 00:00:35,442 127.0.0.1 - - [27/Sep/2015 00:00:35] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 00:01:57,989  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:09:51,748  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 00:09:51,748  * Restarting with reloader
+INFO: 2015-09-27 00:10:18,086  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:10:18,126  * Restarting with reloader
+INFO: 2015-09-27 00:10:23,131  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 00:10:23,131  * Restarting with reloader
+INFO: 2015-09-27 00:10:58,227  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 00:10:58,228  * Restarting with reloader
+INFO: 2015-09-27 00:11:31,626  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:11:31,643  * Restarting with reloader
+INFO: 2015-09-27 00:11:41,824  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 00:11:41,824  * Restarting with reloader
+INFO: 2015-09-27 00:13:23,196  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 00:13:23,196  * Restarting with reloader
+INFO: 2015-09-27 00:14:01,464 127.0.0.1 - - [27/Sep/2015 00:14:01] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:14:18,151 127.0.0.1 - - [27/Sep/2015 00:14:18] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:14:18,182 token :af0414a1c6d44f09a630129af1acf159
+INFO: 2015-09-27 00:14:18,185 127.0.0.1 - - [27/Sep/2015 00:14:18] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 00:14:26,356 127.0.0.1 - - [27/Sep/2015 00:14:26] "GET /book?myLat=12.950072&myLng=77.642684&category=sedan HTTP/1.1" 404 -
+INFO: 2015-09-27 00:14:33,842  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:14:33,860  * Restarting with reloader
+INFO: 2015-09-27 00:14:39,158 127.0.0.1 - - [27/Sep/2015 00:14:39] "GET /book?myLat=12.950072&myLng=77.642684&category=sedan HTTP/1.1" 400 -
+INFO: 2015-09-27 00:14:59,384 127.0.0.1 - - [27/Sep/2015 00:14:59] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 500 -
+INFO: 2015-09-27 00:16:36,998  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:16:37,015  * Restarting with reloader
+INFO: 2015-09-27 00:16:52,374  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:16:52,400  * Restarting with reloader
+INFO: 2015-09-27 00:17:16,479  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 00:17:16,479  * Restarting with reloader
+INFO: 2015-09-27 00:17:27,554 127.0.0.1 - - [27/Sep/2015 00:17:27] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:17:38,581 127.0.0.1 - - [27/Sep/2015 00:17:38] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:17:38,610 token :fa2e541239054f66991b3939239ee365
+INFO: 2015-09-27 00:17:38,612 127.0.0.1 - - [27/Sep/2015 00:17:38] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 00:17:43,498 fa2e541239054f66991b3939239ee365
+INFO: 2015-09-27 00:17:43,562 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 00:17:44,675 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 00:17:44,678 127.0.0.1 - - [27/Sep/2015 00:17:44] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 00:18:06,090 fa2e541239054f66991b3939239ee365
+DEBUG: 2015-09-27 00:18:06,820 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 00:18:06,822 127.0.0.1 - - [27/Sep/2015 00:18:06] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 00:19:37,356 127.0.0.1 - - [27/Sep/2015 00:19:37] "GET /demo HTTP/1.1" 200 -
+INFO: 2015-09-27 00:19:37,398 127.0.0.1 - - [27/Sep/2015 00:19:37] "GET /util.js HTTP/1.1" 200 -
+INFO: 2015-09-27 00:19:40,645 127.0.0.1 - - [27/Sep/2015 00:19:40] "GET /demo HTTP/1.1" 200 -
+INFO: 2015-09-27 00:20:20,492 127.0.0.1 - - [27/Sep/2015 00:20:20] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:20:32,379 127.0.0.1 - - [27/Sep/2015 00:20:32] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:20:38,394 token :20ba5fc3097143abb0a5fcc2316e6b6b
+INFO: 2015-09-27 00:20:38,395 127.0.0.1 - - [27/Sep/2015 00:20:38] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 00:20:58,192 20ba5fc3097143abb0a5fcc2316e6b6b
+INFO: 2015-09-27 00:20:58,578 Resetting dropped connection: sandbox-t.olacabs.com
+DEBUG: 2015-09-27 00:20:59,262 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 00:20:59,263 127.0.0.1 - - [27/Sep/2015 00:20:59] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 00:39:11,279  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:39:11,319  * Restarting with reloader
+INFO: 2015-09-27 00:39:19,387 127.0.0.1 - - [27/Sep/2015 00:39:19] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:39:31,550 127.0.0.1 - - [27/Sep/2015 00:39:31] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:39:34,323 in save token, token : ea37bb5ec8ba4c1eb14b3ce425a4c054
+INFO: 2015-09-27 00:39:34,324 after assigning to seesion, token :ea37bb5ec8ba4c1eb14b3ce425a4c054
+INFO: 2015-09-27 00:39:34,333 127.0.0.1 - - [27/Sep/2015 00:39:34] "POST /save_token HTTP/1.1" 500 -
+INFO: 2015-09-27 00:39:46,032 127.0.0.1 - - [27/Sep/2015 00:39:46] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 500 -
+INFO: 2015-09-27 00:40:28,384  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:40:28,425  * Restarting with reloader
+INFO: 2015-09-27 00:40:53,210 127.0.0.1 - - [27/Sep/2015 00:40:53] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:41:05,287 127.0.0.1 - - [27/Sep/2015 00:41:05] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:41:07,489 in save token, token : a8b9d0a47e074152a289ba84acb1350a
+INFO: 2015-09-27 00:41:07,489 after assigning to seesion, token :a8b9d0a47e074152a289ba84acb1350a
+INFO: 2015-09-27 00:41:07,494 127.0.0.1 - - [27/Sep/2015 00:41:07] "POST /save_token HTTP/1.1" 500 -
+INFO: 2015-09-27 00:41:16,659 None
+INFO: 2015-09-27 00:41:16,714 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 00:41:17,751 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 00:41:17,753 127.0.0.1 - - [27/Sep/2015 00:41:17] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 00:44:57,726  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:44:57,747  * Restarting with reloader
+INFO: 2015-09-27 00:46:28,623  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:46:28,687  * Restarting with reloader
+INFO: 2015-09-27 00:47:44,258 127.0.0.1 - - [27/Sep/2015 00:47:44] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:47:56,773 127.0.0.1 - - [27/Sep/2015 00:47:56] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:47:58,520 in save token, token : b7799c9cb8c049768086b3b2444ad348
+INFO: 2015-09-27 00:47:58,520 after assigning to sesion, token :b7799c9cb8c049768086b3b2444ad348
+INFO: 2015-09-27 00:47:58,525 127.0.0.1 - - [27/Sep/2015 00:47:58] "POST /save_token HTTP/1.1" 500 -
+INFO: 2015-09-27 00:49:00,170  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:49:00,194  * Restarting with reloader
+INFO: 2015-09-27 00:49:04,576 127.0.0.1 - - [27/Sep/2015 00:49:04] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:49:16,133 127.0.0.1 - - [27/Sep/2015 00:49:16] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:49:17,766 in save token, token : f63be0a049b345f5b66a41cd40d405a9
+INFO: 2015-09-27 00:49:17,766 after assigning to sesion, token :f63be0a049b345f5b66a41cd40d405a9
+INFO: 2015-09-27 00:49:17,767 127.0.0.1 - - [27/Sep/2015 00:49:17] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 00:49:28,156 f63be0a049b345f5b66a41cd40d405a9
+INFO: 2015-09-27 00:49:28,510 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 00:49:29,179 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 00:49:29,181 127.0.0.1 - - [27/Sep/2015 00:49:29] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 00:51:42,726  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 00:51:42,741  * Restarting with reloader
+INFO: 2015-09-27 00:51:48,355 127.0.0.1 - - [27/Sep/2015 00:51:48] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 00:52:00,484 127.0.0.1 - - [27/Sep/2015 00:52:00] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 00:52:01,736 in save token, token : 6c6fa9eab0134ee0818dd7d7b87885f1
+INFO: 2015-09-27 00:52:01,737 after assigning to sesion, token :6c6fa9eab0134ee0818dd7d7b87885f1
+INFO: 2015-09-27 00:52:01,738 127.0.0.1 - - [27/Sep/2015 00:52:01] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 00:52:05,904 6c6fa9eab0134ee0818dd7d7b87885f1
+INFO: 2015-09-27 00:52:06,295 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 00:52:08,153 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 159
+INFO: 2015-09-27 00:52:08,156 127.0.0.1 - - [27/Sep/2015 00:52:08] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -

@@ -9,11 +9,19 @@ from flask_sslify import SSLify
 from rauth import OAuth2Service
 import requests
 
+import logging
+
 app = Flask(__name__, static_folder='static', static_url_path='')
 app.requests_session = requests.Session()
 app.secret_key = os.urandom(24)
 
 sslify = SSLify(app)
+
+logging.basicConfig(
+    format="%(levelname)s: %(asctime)s %(message)s",
+    filename="debug.log",
+    level=logging.DEBUG,
+)
 
 with open('config.json') as f:
     config = json.load(f)
@@ -52,40 +60,78 @@ def signup():
     You should navigate here first. It will redirect to login.uber.com.
     """
     params = {
-        'response_type': 'code',
-        'redirect_uri': get_redirect_uri(request),
-        'scopes': ','.join(config.get('scopes')),
+        'response_type': 'token',
+        'client_id' : 'YTliMWNlYTUtYmRmYy00OTA1LWE1Y2YtMjdiMjljNGY4OTZj',
+        #'redirect_uri': get_redirect_uri(request),
+        'redirect_uri': 'http://localhost:7000/submit&scope=profile%20booking&state=state123'
+        #'scopes': ','.join(config.get('scopes')),
     }
-    url = generate_oauth_service().get_authorize_url(**params)
+    url = "http://sandbox-t.olacabs.com/oauth2/authorize?response_type=token&client_id=YTliMWNlYTUtYmRmYy00OTA1LWE1Y2YtMjdiMjljNGY4OTZj&redirect_uri=http://localhost/team56&scope=profile%20booking&state=state123"
     return redirect(url)
 
 
-@app.route('/submit', methods=['GET'])
+@app.route('/team56', methods=['GET'])
 def submit():
     """The other two steps in the three-legged Oauth handshake.
 
     Your redirect uri will redirect you here, where you will exchange
     a code that can be used to obtain an access token for the logged-in use.
     """
-    params = {
-        'redirect_uri': get_redirect_uri(request),
-        'code': request.args.get('code'),
-        'grant_type': 'authorization_code'
-    }
-    response = app.requests_session.post(
-        config.get('access_token_url'),
-        auth=(
-            os.environ.get('UBER_CLIENT_ID'),
-            os.environ.get('UBER_CLIENT_SECRET')
-        ),
-        data=params,
-    )
-    session['access_token'] = response.json().get('access_token')
+    # params = {
+    #     'redirect_uri': get_redirect_uri(request),
+    #     'code': request.args.get('code'),
+    #     'grant_type': 'authorization_code'
+    # }
+    # response = app.requests_session.post(
+    #     config.get('access_token_url'),
+    #     auth=(
+    #         os.environ.get('UBER_CLIENT_ID'),
+    #         os.environ.get('UBER_CLIENT_SECRET')
+    #     ),
+    #     data=params,
+    # )
+    # session['access_token'] = response.json().get('access_token')
 
     return render_template(
-        'success.html',
-        token=response.json().get('access_token')
+        'debug.html',
+        #token=response.json().get(request)
+        token=request.url
     )
+
+@app.route('/book', methods=['GET'])
+def book():
+    url = "http://sandbox-t.olacabs.com/v1/bookings/create"
+    logging.info(session.get('access_token'))
+    params = {
+        'pickup_lat': request.args['myLat'],
+        'pickup_lng': request.args['myLong'],
+        'pickup_mode':"NOW",
+        'category': request.args['category']
+    }
+    headers={
+        'X-APP-TOKEN': config.get('x_app_token'),
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer %s' % session.get('access_token'),
+    }
+    response = app.requests_session.get(
+        url,
+        headers=headers,
+        params=params,
+    )
+    return response.text
+
+@app.route('/save_token', methods=['POST'])
+def save_token():
+    post_json=request.get_json(force=True)
+    logging.info("in save token, token : "+ post_json['token'])
+    session['access_token'] =post_json['token']
+    logging.info("after assigning to sesion, token :"+session.get('access_token'))
+    return "successful"
+    # return render_template(
+    #     'debug2.html',
+    #     #token=response.json().get(request)
+    #     token=session['access_token']
+    # )
 
 
 @app.route('/demo', methods=['GET'])
@@ -242,4 +288,4 @@ def get_redirect_uri(request):
 
 if __name__ == '__main__':
     app.debug = os.environ.get('FLASK_DEBUG', True)
-    app.run(port=7000)
+    app.run(port=80)

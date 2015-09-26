@@ -137,6 +137,33 @@ def cancel():
     )
     return response.text
 
+@app.route('/map', methods=['GET'])
+def map():
+    return render_template(
+        'map.html'
+    )
+
+@app.route('/track', methods=['GET'])
+def track():
+    url = "http://sandbox-t.olacabs.com/v1/bookings/track_ride"
+
+    headers={
+        'X-APP-TOKEN': config.get('x_app_token'),
+        'Authorization': 'Bearer %s' % session.get('access_token')
+    }
+    response = app.requests_session.get(
+        url,
+        headers=headers
+    )
+    return response.text
+
+@app.route('/is_logged_in', methods=['GET'])
+def logged_in():
+    if 'access_token' not in session:
+        return "false"
+    else:
+        return "true"
+
 @app.route('/save_token', methods=['POST'])
 def save_token():
     post_json=request.get_json(force=True)

@@ -141,3 +141,74 @@ DEBUG: 2015-09-27 02:25:57,703 "GET /v1/bookings/create?category=sedan&pickup_mo
 INFO: 2015-09-27 02:25:57,707 127.0.0.1 - - [27/Sep/2015 02:25:57] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
 DEBUG: 2015-09-27 02:27:02,253 "GET /v1/bookings/cancel?crn=1159 HTTP/1.1" 200 145
 INFO: 2015-09-27 02:27:02,256 127.0.0.1 - - [27/Sep/2015 02:27:02] "GET /cancel?crn=1159 HTTP/1.1" 200 -
+INFO: 2015-09-27 02:56:13,869 127.0.0.1 - - [27/Sep/2015 02:56:13] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 02:56:27,221 127.0.0.1 - - [27/Sep/2015 02:56:27] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 02:56:28,597 in save token, token : 5cadde3f8a6f4e8e909c628d83fa0ed0
+INFO: 2015-09-27 02:56:28,597 after assigning to sesion, token :5cadde3f8a6f4e8e909c628d83fa0ed0
+INFO: 2015-09-27 02:56:28,598 127.0.0.1 - - [27/Sep/2015 02:56:28] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 02:58:26,501  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 02:58:26,531  * Restarting with reloader
+INFO: 2015-09-27 02:59:41,540  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 02:59:41,540  * Restarting with reloader
+INFO: 2015-09-27 02:59:48,258 127.0.0.1 - - [27/Sep/2015 02:59:48] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 02:59:51,517 127.0.0.1 - - [27/Sep/2015 02:59:51] "GET /maps HTTP/1.1" 404 -
+INFO: 2015-09-27 02:59:56,720 127.0.0.1 - - [27/Sep/2015 02:59:56] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 03:02:00,597 127.0.0.1 - - [27/Sep/2015 03:02:00] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 03:58:07,885 127.0.0.1 - - [27/Sep/2015 03:58:07] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 03:58:23,230 127.0.0.1 - - [27/Sep/2015 03:58:23] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 03:58:27,656 in save token, token : 2ff9889c70f44cc0b8b2021f9324966f
+INFO: 2015-09-27 03:58:27,656 after assigning to sesion, token :2ff9889c70f44cc0b8b2021f9324966f
+INFO: 2015-09-27 03:58:27,657 127.0.0.1 - - [27/Sep/2015 03:58:27] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 03:59:01,106 2ff9889c70f44cc0b8b2021f9324966f
+INFO: 2015-09-27 03:59:01,179 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 03:59:06,014 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 161
+INFO: 2015-09-27 03:59:06,019 127.0.0.1 - - [27/Sep/2015 03:59:06] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 04:02:44,004  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:02:44,029  * Restarting with reloader
+INFO: 2015-09-27 04:04:39,807  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 04:04:39,807  * Restarting with reloader
+INFO: 2015-09-27 04:04:47,054 127.0.0.1 - - [27/Sep/2015 04:04:47] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 04:05:02,794 127.0.0.1 - - [27/Sep/2015 04:05:02] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 04:05:05,816 in save token, token : 4864516ffbe044f69941f395d24ab0ee
+INFO: 2015-09-27 04:05:05,816 after assigning to sesion, token :4864516ffbe044f69941f395d24ab0ee
+INFO: 2015-09-27 04:05:05,817 127.0.0.1 - - [27/Sep/2015 04:05:05] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 04:05:09,722 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 04:05:10,939 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 04:05:10,942 127.0.0.1 - - [27/Sep/2015 04:05:10] "GET /track HTTP/1.1" 200 -
+INFO: 2015-09-27 04:10:08,324  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:10:08,347  * Restarting with reloader
+INFO: 2015-09-27 04:11:10,622  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 04:11:10,623  * Restarting with reloader
+INFO: 2015-09-27 04:11:25,957 127.0.0.1 - - [27/Sep/2015 04:11:25] "GET /is_logged_in HTTP/1.1" 500 -
+INFO: 2015-09-27 04:11:26,025 127.0.0.1 - - [27/Sep/2015 04:11:26] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 04:11:26,031 127.0.0.1 - - [27/Sep/2015 04:11:26] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 04:11:26,041 127.0.0.1 - - [27/Sep/2015 04:11:26] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 04:11:26,087 127.0.0.1 - - [27/Sep/2015 04:11:26] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 04:11:26,157 127.0.0.1 - - [27/Sep/2015 04:11:26] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 04:11:26,168 127.0.0.1 - - [27/Sep/2015 04:11:26] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 04:11:26,389 127.0.0.1 - - [27/Sep/2015 04:11:26] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 04:11:45,050  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:11:45,064  * Restarting with reloader
+INFO: 2015-09-27 04:11:58,523  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 04:11:58,524  * Restarting with reloader
+INFO: 2015-09-27 04:12:02,340 127.0.0.1 - - [27/Sep/2015 04:12:02] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 04:12:34,028  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:12:34,044  * Restarting with reloader
+INFO: 2015-09-27 04:12:37,643 127.0.0.1 - - [27/Sep/2015 04:12:37] "GET /is_logged_in HTTP/1.1" 500 -
+INFO: 2015-09-27 04:12:37,683 127.0.0.1 - - [27/Sep/2015 04:12:37] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 04:12:37,685 127.0.0.1 - - [27/Sep/2015 04:12:37] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 04:12:37,689 127.0.0.1 - - [27/Sep/2015 04:12:37] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 04:12:37,741 127.0.0.1 - - [27/Sep/2015 04:12:37] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 04:12:37,743 127.0.0.1 - - [27/Sep/2015 04:12:37] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 04:12:37,747 127.0.0.1 - - [27/Sep/2015 04:12:37] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 04:12:37,828 127.0.0.1 - - [27/Sep/2015 04:12:37] "GET /is_logged_in?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 04:13:07,657  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:13:07,676  * Restarting with reloader
+INFO: 2015-09-27 04:13:11,068 127.0.0.1 - - [27/Sep/2015 04:13:11] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 04:13:15,611 127.0.0.1 - - [27/Sep/2015 04:13:15] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 04:13:31,451 127.0.0.1 - - [27/Sep/2015 04:13:31] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 04:13:32,905 in save token, token : e4b3e5a3d2bb43d199149b2e518f4998
+INFO: 2015-09-27 04:13:32,905 after assigning to sesion, token :e4b3e5a3d2bb43d199149b2e518f4998
+INFO: 2015-09-27 04:13:32,906 127.0.0.1 - - [27/Sep/2015 04:13:32] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 04:13:34,828 127.0.0.1 - - [27/Sep/2015 04:13:34] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 04:14:06,864 127.0.0.1 - - [27/Sep/2015 04:14:06] "GET /is_logged_in HTTP/1.1" 200 -

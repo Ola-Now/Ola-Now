@@ -212,3 +212,462 @@ INFO: 2015-09-27 04:13:32,905 after assigning to sesion, token :e4b3e5a3d2bb43d1
 INFO: 2015-09-27 04:13:32,906 127.0.0.1 - - [27/Sep/2015 04:13:32] "POST /save_token HTTP/1.1" 200 -
 INFO: 2015-09-27 04:13:34,828 127.0.0.1 - - [27/Sep/2015 04:13:34] "GET /is_logged_in HTTP/1.1" 200 -
 INFO: 2015-09-27 04:14:06,864 127.0.0.1 - - [27/Sep/2015 04:14:06] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:28,365  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:47:28,410  * Restarting with reloader
+INFO: 2015-09-27 04:47:39,689 127.0.0.1 - - [27/Sep/2015 04:47:39] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:42,207 127.0.0.1 - - [27/Sep/2015 04:47:42] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:42,991 127.0.0.1 - - [27/Sep/2015 04:47:42] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:43,478 127.0.0.1 - - [27/Sep/2015 04:47:43] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:43,924 127.0.0.1 - - [27/Sep/2015 04:47:43] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:44,693 127.0.0.1 - - [27/Sep/2015 04:47:44] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:45,383 127.0.0.1 - - [27/Sep/2015 04:47:45] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:51,471 127.0.0.1 - - [27/Sep/2015 04:47:51] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:52,026 127.0.0.1 - - [27/Sep/2015 04:47:52] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:47:52,316 127.0.0.1 - - [27/Sep/2015 04:47:52] "GET /test HTTP/1.1" 200 -
+INFO: 2015-09-27 04:49:17,611  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:49:17,637  * Restarting with reloader
+INFO: 2015-09-27 04:49:45,176 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 04:49:46,181 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 04:49:46,184 127.0.0.1 - - [27/Sep/2015 04:49:46] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 04:49:50,013 in save token, token : 20ba5fc3097143abb0a5fcc2316e6b6b
+INFO: 2015-09-27 04:49:50,013 after assigning to sesion, token :20ba5fc3097143abb0a5fcc2316e6b6b
+INFO: 2015-09-27 04:49:50,015 127.0.0.1 - - [27/Sep/2015 04:49:50] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 04:49:51,201 in save token, token : 4e9aeb8ea2624264bb07ad9c8aaa434e
+INFO: 2015-09-27 04:49:51,201 after assigning to sesion, token :4e9aeb8ea2624264bb07ad9c8aaa434e
+INFO: 2015-09-27 04:49:51,202 127.0.0.1 - - [27/Sep/2015 04:49:51] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 04:49:51,745 in save token, token : 2ff9889c70f44cc0b8b2021f9324966f
+INFO: 2015-09-27 04:49:51,745 after assigning to sesion, token :2ff9889c70f44cc0b8b2021f9324966f
+INFO: 2015-09-27 04:49:51,747 127.0.0.1 - - [27/Sep/2015 04:49:51] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 04:49:52,857 in save token, token : e4b3e5a3d2bb43d199149b2e518f4998
+INFO: 2015-09-27 04:49:52,857 after assigning to sesion, token :e4b3e5a3d2bb43d199149b2e518f4998
+INFO: 2015-09-27 04:49:52,858 127.0.0.1 - - [27/Sep/2015 04:49:52] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 04:49:53,229 in save token, token : 4864516ffbe044f69941f395d24ab0ee
+INFO: 2015-09-27 04:49:53,229 after assigning to sesion, token :4864516ffbe044f69941f395d24ab0ee
+INFO: 2015-09-27 04:49:53,230 127.0.0.1 - - [27/Sep/2015 04:49:53] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 04:51:07,621 Resetting dropped connection: sandbox-t.olacabs.com
+DEBUG: 2015-09-27 04:51:08,394 "GET /v1/bookings/track_ride HTTP/1.1" 200 180
+INFO: 2015-09-27 04:51:08,396 127.0.0.1 - - [27/Sep/2015 04:51:08] "GET /track HTTP/1.1" 200 -
+INFO: 2015-09-27 04:52:35,613  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:52:35,634  * Restarting with reloader
+INFO: 2015-09-27 04:52:53,161  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:52:53,173  * Restarting with reloader
+INFO: 2015-09-27 04:54:23,014  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:54:23,028  * Restarting with reloader
+INFO: 2015-09-27 04:55:19,586  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 04:55:19,601  * Restarting with reloader
+INFO: 2015-09-27 04:55:29,814 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 04:55:30,502 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 04:55:30,511 127.0.0.1 - - [27/Sep/2015 04:55:30] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 04:55:30,577 127.0.0.1 - - [27/Sep/2015 04:55:30] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 04:55:30,582 127.0.0.1 - - [27/Sep/2015 04:55:30] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 04:55:30,589 127.0.0.1 - - [27/Sep/2015 04:55:30] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 04:55:30,632 127.0.0.1 - - [27/Sep/2015 04:55:30] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 04:55:30,710 127.0.0.1 - - [27/Sep/2015 04:55:30] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 04:55:30,721 127.0.0.1 - - [27/Sep/2015 04:55:30] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 04:55:30,826 127.0.0.1 - - [27/Sep/2015 04:55:30] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 04:56:16,042 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 04:56:16,043 127.0.0.1 - - [27/Sep/2015 04:56:16] "GET /track HTTP/1.1" 200 -
+INFO: 2015-09-27 04:56:21,000 127.0.0.1 - - [27/Sep/2015 04:56:21] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 04:56:39,577 127.0.0.1 - - [27/Sep/2015 04:56:39] "GET /team56 HTTP/1.1" 200 -
+DEBUG: 2015-09-27 04:56:44,557 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 04:56:44,558 127.0.0.1 - - [27/Sep/2015 04:56:44] "GET /track HTTP/1.1" 200 -
+DEBUG: 2015-09-27 04:56:59,597 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 04:56:59,598 127.0.0.1 - - [27/Sep/2015 04:56:59] "GET /track HTTP/1.1" 200 -
+INFO: 2015-09-27 04:57:26,118 None
+DEBUG: 2015-09-27 04:57:26,543 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 04:57:26,544 127.0.0.1 - - [27/Sep/2015 04:57:26] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 04:57:46,597  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 04:57:46,597  * Restarting with reloader
+INFO: 2015-09-27 04:57:57,415 127.0.0.1 - - [27/Sep/2015 04:57:57] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 04:58:08,462 127.0.0.1 - - [27/Sep/2015 04:58:08] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 04:58:13,167 None
+INFO: 2015-09-27 04:58:13,556 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 04:58:14,179 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 04:58:14,180 127.0.0.1 - - [27/Sep/2015 04:58:14] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 04:58:28,129 127.0.0.1 - - [27/Sep/2015 04:58:28] "GET /test HTTP/1.1" 404 -
+INFO: 2015-09-27 04:58:32,479 127.0.0.1 - - [27/Sep/2015 04:58:32] "GET /test HTTP/1.1" 404 -
+INFO: 2015-09-27 04:58:41,226 127.0.0.1 - - [27/Sep/2015 04:58:41] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 04:59:27,086 Resetting dropped connection: sandbox-t.olacabs.com
+DEBUG: 2015-09-27 04:59:27,703 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 04:59:27,704 127.0.0.1 - - [27/Sep/2015 04:59:27] "GET /track HTTP/1.1" 200 -
+INFO: 2015-09-27 04:59:54,081 127.0.0.1 - - [27/Sep/2015 04:59:54] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 05:00:03,052 127.0.0.1 - - [27/Sep/2015 05:00:03] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 05:00:16,489 127.0.0.1 - - [27/Sep/2015 05:00:16] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 05:00:50,264 127.0.0.1 - - [27/Sep/2015 05:00:50] "POST /products HTTP/1.1" 400 -
+INFO: 2015-09-27 05:00:59,238 127.0.0.1 - - [27/Sep/2015 05:00:59] "POST /products HTTP/1.1" 400 -
+INFO: 2015-09-27 05:01:44,888 127.0.0.1 - - [27/Sep/2015 05:01:44] "GET /v1/products?pickup_lat=12.9570&pickup_lng=77.6994&drop_lat=12.96&drop_lng=77.678&category=sedan HTTP/1.1" 404 -
+INFO: 2015-09-27 05:01:53,266 127.0.0.1 - - [27/Sep/2015 05:01:53] "GET /products?pickup_lat=12.9570&pickup_lng=77.6994&drop_lat=12.96&drop_lng=77.678&category=sedan HTTP/1.1" 404 -
+INFO: 2015-09-27 05:02:55,486 127.0.0.1 - - [27/Sep/2015 05:02:55] "POST /products?category=sedan HTTP/1.1" 400 -
+INFO: 2015-09-27 05:03:02,790 Resetting dropped connection: sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:03:03,678 "GET /v1/products?category=sedan&drop_lat=12.96&pickup_lat=12.957&pickup_lng=77.6994&drop_lng=77.678 HTTP/1.1" 200 303
+INFO: 2015-09-27 05:03:03,679 127.0.0.1 - - [27/Sep/2015 05:03:03] "POST /products?category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 05:03:32,346 None
+DEBUG: 2015-09-27 05:03:32,737 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 05:03:32,738 127.0.0.1 - - [27/Sep/2015 05:03:32] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 05:04:39,684  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 05:04:39,715  * Restarting with reloader
+INFO: 2015-09-27 05:04:49,969 127.0.0.1 - - [27/Sep/2015 05:04:49] "GET /access_token HTTP/1.1" 500 -
+INFO: 2015-09-27 05:04:50,042 127.0.0.1 - - [27/Sep/2015 05:04:50] "GET /access_token?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:04:50,044 127.0.0.1 - - [27/Sep/2015 05:04:50] "GET /access_token?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:04:50,051 127.0.0.1 - - [27/Sep/2015 05:04:50] "GET /access_token?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:04:50,096 127.0.0.1 - - [27/Sep/2015 05:04:50] "GET /access_token?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:04:50,156 127.0.0.1 - - [27/Sep/2015 05:04:50] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:04:50,170 127.0.0.1 - - [27/Sep/2015 05:04:50] "GET /access_token?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:04:50,294 127.0.0.1 - - [27/Sep/2015 05:04:50] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:05:04,268 127.0.0.1 - - [27/Sep/2015 05:05:04] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 05:05:19,858 127.0.0.1 - - [27/Sep/2015 05:05:19] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 05:05:21,778 127.0.0.1 - - [27/Sep/2015 05:05:21] "GET /access_token HTTP/1.1" 500 -
+INFO: 2015-09-27 05:05:21,825 127.0.0.1 - - [27/Sep/2015 05:05:21] "GET /access_token?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:05:21,827 127.0.0.1 - - [27/Sep/2015 05:05:21] "GET /access_token?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:05:21,830 127.0.0.1 - - [27/Sep/2015 05:05:21] "GET /access_token?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:05:21,861 127.0.0.1 - - [27/Sep/2015 05:05:21] "GET /access_token?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:05:21,867 127.0.0.1 - - [27/Sep/2015 05:05:21] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:05:21,870 127.0.0.1 - - [27/Sep/2015 05:05:21] "GET /access_token?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:06:42,270 127.0.0.1 - - [27/Sep/2015 05:06:42] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 05:06:54,016 127.0.0.1 - - [27/Sep/2015 05:06:54] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 05:06:54,045 in save token, token : b2eaed9000bf48b8a010e66d8ebf57d9
+INFO: 2015-09-27 05:06:54,045 after assigning to sesion, token :b2eaed9000bf48b8a010e66d8ebf57d9
+INFO: 2015-09-27 05:06:54,045 127.0.0.1 - - [27/Sep/2015 05:06:54] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 05:07:07,457 127.0.0.1 - - [27/Sep/2015 05:07:07] "GET /access_token HTTP/1.1" 200 -
+INFO: 2015-09-27 05:07:43,868 b2eaed9000bf48b8a010e66d8ebf57d9
+INFO: 2015-09-27 05:07:43,872 127.0.0.1 - - [27/Sep/2015 05:07:43] "GET /book HTTP/1.1" 400 -
+INFO: 2015-09-27 05:07:55,983 b2eaed9000bf48b8a010e66d8ebf57d9
+INFO: 2015-09-27 05:07:56,414 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:07:58,662 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 05:07:58,665 127.0.0.1 - - [27/Sep/2015 05:07:58] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:03,973 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:03,975 127.0.0.1 - - [27/Sep/2015 05:08:03] "GET /track HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:15,834 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:15,835 90.591801
+INFO: 2015-09-27 05:08:15,839 127.0.0.1 - - [27/Sep/2015 05:08:15] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:16,358 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:16,359 90.591801
+INFO: 2015-09-27 05:08:16,361 127.0.0.1 - - [27/Sep/2015 05:08:16] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:20,738 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:20,739 90.591801
+INFO: 2015-09-27 05:08:20,741 127.0.0.1 - - [27/Sep/2015 05:08:20] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:21,955 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:21,956 90.591801
+INFO: 2015-09-27 05:08:21,958 127.0.0.1 - - [27/Sep/2015 05:08:21] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:22,894 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:22,895 90.591801
+INFO: 2015-09-27 05:08:22,896 127.0.0.1 - - [27/Sep/2015 05:08:22] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:23,708 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:23,709 90.591801
+INFO: 2015-09-27 05:08:23,710 127.0.0.1 - - [27/Sep/2015 05:08:23] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:24,566 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:24,567 90.591801
+INFO: 2015-09-27 05:08:24,568 127.0.0.1 - - [27/Sep/2015 05:08:24] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:25,443 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:25,444 90.591801
+INFO: 2015-09-27 05:08:25,445 127.0.0.1 - - [27/Sep/2015 05:08:25] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:27,428 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:27,429 90.591801
+INFO: 2015-09-27 05:08:27,430 127.0.0.1 - - [27/Sep/2015 05:08:27] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:28,325 "GET /v1/bookings/track_ride HTTP/1.1" 200 4
+INFO: 2015-09-27 05:08:28,332 127.0.0.1 - - [27/Sep/2015 05:08:28] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:08:28,366 127.0.0.1 - - [27/Sep/2015 05:08:28] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:08:28,378 127.0.0.1 - - [27/Sep/2015 05:08:28] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:08:28,380 127.0.0.1 - - [27/Sep/2015 05:08:28] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:08:28,414 127.0.0.1 - - [27/Sep/2015 05:08:28] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:08:28,454 127.0.0.1 - - [27/Sep/2015 05:08:28] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:08:28,455 127.0.0.1 - - [27/Sep/2015 05:08:28] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:08:28,557 127.0.0.1 - - [27/Sep/2015 05:08:28] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:31,043 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:31,044 90.591801
+INFO: 2015-09-27 05:08:31,045 127.0.0.1 - - [27/Sep/2015 05:08:31] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:32,203 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:32,204 90.591801
+INFO: 2015-09-27 05:08:32,205 127.0.0.1 - - [27/Sep/2015 05:08:32] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:33,142 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:33,143 90.591801
+INFO: 2015-09-27 05:08:33,144 127.0.0.1 - - [27/Sep/2015 05:08:33] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:08:34,138 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:08:34,139 90.591801
+INFO: 2015-09-27 05:08:34,140 127.0.0.1 - - [27/Sep/2015 05:08:34] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:29,990  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 05:09:30,016  * Restarting with reloader
+INFO: 2015-09-27 05:09:33,257 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:09:33,926 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:09:33,934 127.0.0.1 - - [27/Sep/2015 05:09:33] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:09:34,008 127.0.0.1 - - [27/Sep/2015 05:09:34] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:34,010 127.0.0.1 - - [27/Sep/2015 05:09:34] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:34,012 127.0.0.1 - - [27/Sep/2015 05:09:34] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:34,052 127.0.0.1 - - [27/Sep/2015 05:09:34] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:34,058 127.0.0.1 - - [27/Sep/2015 05:09:34] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:34,062 127.0.0.1 - - [27/Sep/2015 05:09:34] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:34,139 127.0.0.1 - - [27/Sep/2015 05:09:34] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:09:36,831 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:09:36,839 127.0.0.1 - - [27/Sep/2015 05:09:36] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:09:36,882 127.0.0.1 - - [27/Sep/2015 05:09:36] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:36,887 127.0.0.1 - - [27/Sep/2015 05:09:36] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:36,889 127.0.0.1 - - [27/Sep/2015 05:09:36] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:36,922 127.0.0.1 - - [27/Sep/2015 05:09:36] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:36,924 127.0.0.1 - - [27/Sep/2015 05:09:36] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:36,925 127.0.0.1 - - [27/Sep/2015 05:09:36] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:09:37,011 127.0.0.1 - - [27/Sep/2015 05:09:37] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:13,654  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 05:10:13,672  * Restarting with reloader
+INFO: 2015-09-27 05:10:16,388 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:10:17,021 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:10:17,029 127.0.0.1 - - [27/Sep/2015 05:10:17] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:10:17,098 127.0.0.1 - - [27/Sep/2015 05:10:17] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:17,100 127.0.0.1 - - [27/Sep/2015 05:10:17] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:17,101 127.0.0.1 - - [27/Sep/2015 05:10:17] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:17,136 127.0.0.1 - - [27/Sep/2015 05:10:17] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:17,143 127.0.0.1 - - [27/Sep/2015 05:10:17] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:17,146 127.0.0.1 - - [27/Sep/2015 05:10:17] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:17,234 127.0.0.1 - - [27/Sep/2015 05:10:17] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:10:18,251 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:10:18,260 127.0.0.1 - - [27/Sep/2015 05:10:18] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:10:18,304 127.0.0.1 - - [27/Sep/2015 05:10:18] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:18,308 127.0.0.1 - - [27/Sep/2015 05:10:18] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:18,316 127.0.0.1 - - [27/Sep/2015 05:10:18] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:18,333 127.0.0.1 - - [27/Sep/2015 05:10:18] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:18,340 127.0.0.1 - - [27/Sep/2015 05:10:18] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:18,343 127.0.0.1 - - [27/Sep/2015 05:10:18] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:18,420 127.0.0.1 - - [27/Sep/2015 05:10:18] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:10:19,250 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:10:19,257 127.0.0.1 - - [27/Sep/2015 05:10:19] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:10:19,288 127.0.0.1 - - [27/Sep/2015 05:10:19] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:19,289 127.0.0.1 - - [27/Sep/2015 05:10:19] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:19,291 127.0.0.1 - - [27/Sep/2015 05:10:19] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:19,326 127.0.0.1 - - [27/Sep/2015 05:10:19] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:19,333 127.0.0.1 - - [27/Sep/2015 05:10:19] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:19,336 127.0.0.1 - - [27/Sep/2015 05:10:19] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:19,458 127.0.0.1 - - [27/Sep/2015 05:10:19] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:10:20,190 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:10:20,196 127.0.0.1 - - [27/Sep/2015 05:10:20] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:10:20,223 127.0.0.1 - - [27/Sep/2015 05:10:20] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:20,225 127.0.0.1 - - [27/Sep/2015 05:10:20] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:20,249 127.0.0.1 - - [27/Sep/2015 05:10:20] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:20,290 127.0.0.1 - - [27/Sep/2015 05:10:20] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:20,296 127.0.0.1 - - [27/Sep/2015 05:10:20] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:20,299 127.0.0.1 - - [27/Sep/2015 05:10:20] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:20,363 127.0.0.1 - - [27/Sep/2015 05:10:20] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:10:21,052 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:10:21,060 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:10:21,090 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:21,091 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:21,094 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:21,129 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:21,143 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:21,146 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:21,209 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:10:21,964 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:10:21,971 127.0.0.1 - - [27/Sep/2015 05:10:21] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:10:22,017 127.0.0.1 - - [27/Sep/2015 05:10:22] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:22,021 127.0.0.1 - - [27/Sep/2015 05:10:22] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:22,023 127.0.0.1 - - [27/Sep/2015 05:10:22] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:22,045 127.0.0.1 - - [27/Sep/2015 05:10:22] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:22,052 127.0.0.1 - - [27/Sep/2015 05:10:22] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:22,055 127.0.0.1 - - [27/Sep/2015 05:10:22] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:22,127 127.0.0.1 - - [27/Sep/2015 05:10:22] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:10:24,262 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:10:24,269 127.0.0.1 - - [27/Sep/2015 05:10:24] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:10:24,317 127.0.0.1 - - [27/Sep/2015 05:10:24] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:24,318 127.0.0.1 - - [27/Sep/2015 05:10:24] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:24,319 127.0.0.1 - - [27/Sep/2015 05:10:24] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:24,376 127.0.0.1 - - [27/Sep/2015 05:10:24] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:24,382 127.0.0.1 - - [27/Sep/2015 05:10:24] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:24,385 127.0.0.1 - - [27/Sep/2015 05:10:24] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:24,431 127.0.0.1 - - [27/Sep/2015 05:10:24] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:10:53,178  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 05:10:53,208  * Restarting with reloader
+INFO: 2015-09-27 05:10:59,022 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:10:59,687 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:10:59,688 None,None
+INFO: 2015-09-27 05:10:59,694 127.0.0.1 - - [27/Sep/2015 05:10:59] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:11:10,954 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:11:10,955 None,None
+INFO: 2015-09-27 05:11:10,956 127.0.0.1 - - [27/Sep/2015 05:11:10] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:11:11,983 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:11:11,984 None,None
+INFO: 2015-09-27 05:11:11,984 127.0.0.1 - - [27/Sep/2015 05:11:11] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:33,772  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 05:11:33,788  * Restarting with reloader
+INFO: 2015-09-27 05:11:39,358 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:11:39,990 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:11:39,991 None,None
+INFO: 2015-09-27 05:11:39,998 127.0.0.1 - - [27/Sep/2015 05:11:39] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:11:40,060 127.0.0.1 - - [27/Sep/2015 05:11:40] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:40,062 127.0.0.1 - - [27/Sep/2015 05:11:40] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:40,064 127.0.0.1 - - [27/Sep/2015 05:11:40] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:40,115 127.0.0.1 - - [27/Sep/2015 05:11:40] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:40,123 127.0.0.1 - - [27/Sep/2015 05:11:40] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:40,128 127.0.0.1 - - [27/Sep/2015 05:11:40] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:40,169 127.0.0.1 - - [27/Sep/2015 05:11:40] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:11:50,567 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:11:50,568 None,None
+INFO: 2015-09-27 05:11:50,575 127.0.0.1 - - [27/Sep/2015 05:11:50] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:11:50,630 127.0.0.1 - - [27/Sep/2015 05:11:50] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:50,632 127.0.0.1 - - [27/Sep/2015 05:11:50] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:50,634 127.0.0.1 - - [27/Sep/2015 05:11:50] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:50,665 127.0.0.1 - - [27/Sep/2015 05:11:50] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:50,672 127.0.0.1 - - [27/Sep/2015 05:11:50] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:50,674 127.0.0.1 - - [27/Sep/2015 05:11:50] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:50,809 127.0.0.1 - - [27/Sep/2015 05:11:50] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:11:51,790 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:11:51,791 None,None
+INFO: 2015-09-27 05:11:51,797 127.0.0.1 - - [27/Sep/2015 05:11:51] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:11:51,830 127.0.0.1 - - [27/Sep/2015 05:11:51] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:51,832 127.0.0.1 - - [27/Sep/2015 05:11:51] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:51,834 127.0.0.1 - - [27/Sep/2015 05:11:51] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:51,881 127.0.0.1 - - [27/Sep/2015 05:11:51] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:51,886 127.0.0.1 - - [27/Sep/2015 05:11:51] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:51,889 127.0.0.1 - - [27/Sep/2015 05:11:51] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:11:51,958 127.0.0.1 - - [27/Sep/2015 05:11:51] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:08,281 Resetting dropped connection: sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:13:08,978 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:13:08,979 None,None
+INFO: 2015-09-27 05:13:08,986 127.0.0.1 - - [27/Sep/2015 05:13:08] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:13:09,035 127.0.0.1 - - [27/Sep/2015 05:13:09] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:09,036 127.0.0.1 - - [27/Sep/2015 05:13:09] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:09,038 127.0.0.1 - - [27/Sep/2015 05:13:09] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:09,069 127.0.0.1 - - [27/Sep/2015 05:13:09] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:09,074 127.0.0.1 - - [27/Sep/2015 05:13:09] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:09,078 127.0.0.1 - - [27/Sep/2015 05:13:09] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:09,166 127.0.0.1 - - [27/Sep/2015 05:13:09] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:13:10,753 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:13:10,754 None,None
+INFO: 2015-09-27 05:13:10,761 127.0.0.1 - - [27/Sep/2015 05:13:10] "GET /map HTTP/1.1" 500 -
+INFO: 2015-09-27 05:13:10,808 127.0.0.1 - - [27/Sep/2015 05:13:10] "GET /map?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:10,815 127.0.0.1 - - [27/Sep/2015 05:13:10] "GET /map?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:10,819 127.0.0.1 - - [27/Sep/2015 05:13:10] "GET /map?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:10,850 127.0.0.1 - - [27/Sep/2015 05:13:10] "GET /map?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:10,856 127.0.0.1 - - [27/Sep/2015 05:13:10] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:10,860 127.0.0.1 - - [27/Sep/2015 05:13:10] "GET /map?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:10,943 127.0.0.1 - - [27/Sep/2015 05:13:10] "GET /map?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:25,884  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 05:13:25,906  * Restarting with reloader
+INFO: 2015-09-27 05:13:27,488 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:13:28,301 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:13:28,302 None,None
+INFO: 2015-09-27 05:13:28,309 127.0.0.1 - - [27/Sep/2015 05:13:28] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:13:48,369  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 05:13:48,388  * Restarting with reloader
+INFO: 2015-09-27 05:13:49,474 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:13:50,129 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:13:50,130 None,None
+INFO: 2015-09-27 05:13:50,137 127.0.0.1 - - [27/Sep/2015 05:13:50] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:15:25,290  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 05:15:25,303  * Restarting with reloader
+INFO: 2015-09-27 05:16:21,227 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 05:16:21,996 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:21,997 None,None
+INFO: 2015-09-27 05:16:22,002 127.0.0.1 - - [27/Sep/2015 05:16:22] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:23,875 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:23,876 None,None
+INFO: 2015-09-27 05:16:23,877 127.0.0.1 - - [27/Sep/2015 05:16:23] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:25,096 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:25,098 None,None
+INFO: 2015-09-27 05:16:25,099 127.0.0.1 - - [27/Sep/2015 05:16:25] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:28,576 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:28,577 None,None
+INFO: 2015-09-27 05:16:28,577 127.0.0.1 - - [27/Sep/2015 05:16:28] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:32,545 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:32,546 None,None
+INFO: 2015-09-27 05:16:32,546 127.0.0.1 - - [27/Sep/2015 05:16:32] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:36,514 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:36,514 None,None
+INFO: 2015-09-27 05:16:36,515 127.0.0.1 - - [27/Sep/2015 05:16:36] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:40,587 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:40,588 None,None
+INFO: 2015-09-27 05:16:40,589 127.0.0.1 - - [27/Sep/2015 05:16:40] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:45,706 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:45,707 None,None
+INFO: 2015-09-27 05:16:45,707 127.0.0.1 - - [27/Sep/2015 05:16:45] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:49,988 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:49,989 None,None
+INFO: 2015-09-27 05:16:49,989 127.0.0.1 - - [27/Sep/2015 05:16:49] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:16:54,199 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:16:54,200 None,None
+INFO: 2015-09-27 05:16:54,201 127.0.0.1 - - [27/Sep/2015 05:16:54] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:02,626 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:02,626 None,None
+INFO: 2015-09-27 05:17:02,627 127.0.0.1 - - [27/Sep/2015 05:17:02] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:06,595 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:06,596 None,None
+INFO: 2015-09-27 05:17:06,597 127.0.0.1 - - [27/Sep/2015 05:17:06] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:10,733 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:10,734 None,None
+INFO: 2015-09-27 05:17:10,734 127.0.0.1 - - [27/Sep/2015 05:17:10] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:14,911 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:14,911 None,None
+INFO: 2015-09-27 05:17:14,912 127.0.0.1 - - [27/Sep/2015 05:17:14] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:18,920 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:18,921 None,None
+INFO: 2015-09-27 05:17:18,922 127.0.0.1 - - [27/Sep/2015 05:17:18] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:19,737 127.0.0.1 - - [27/Sep/2015 05:17:19] "GET /is_logged_in HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:22,994 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:22,995 None,None
+INFO: 2015-09-27 05:17:22,995 127.0.0.1 - - [27/Sep/2015 05:17:22] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:26,962 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:26,963 None,None
+INFO: 2015-09-27 05:17:26,964 127.0.0.1 - - [27/Sep/2015 05:17:26] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:30,866 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:30,867 None,None
+INFO: 2015-09-27 05:17:30,867 127.0.0.1 - - [27/Sep/2015 05:17:30] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:33,188 127.0.0.1 - - [27/Sep/2015 05:17:33] "GET /access_token HTTP/1.1" 500 -
+INFO: 2015-09-27 05:17:33,235 127.0.0.1 - - [27/Sep/2015 05:17:33] "GET /access_token?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:33,238 127.0.0.1 - - [27/Sep/2015 05:17:33] "GET /access_token?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:33,240 127.0.0.1 - - [27/Sep/2015 05:17:33] "GET /access_token?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:33,273 127.0.0.1 - - [27/Sep/2015 05:17:33] "GET /access_token?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:33,303 127.0.0.1 - - [27/Sep/2015 05:17:33] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:33,304 127.0.0.1 - - [27/Sep/2015 05:17:33] "GET /access_token?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:33,443 127.0.0.1 - - [27/Sep/2015 05:17:33] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:35,109 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:35,109 None,None
+INFO: 2015-09-27 05:17:35,110 127.0.0.1 - - [27/Sep/2015 05:17:35] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:39,601 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:39,601 None,None
+INFO: 2015-09-27 05:17:39,602 127.0.0.1 - - [27/Sep/2015 05:17:39] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:43,569 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:43,570 None,None
+INFO: 2015-09-27 05:17:43,570 127.0.0.1 - - [27/Sep/2015 05:17:43] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:47,555 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:47,555 None,None
+INFO: 2015-09-27 05:17:47,556 127.0.0.1 - - [27/Sep/2015 05:17:47] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:17:49,005 127.0.0.1 - - [27/Sep/2015 05:17:49] "GET / HTTP/1.1" 302 -
+DEBUG: 2015-09-27 05:17:51,434 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:51,435 None,None
+INFO: 2015-09-27 05:17:51,436 127.0.0.1 - - [27/Sep/2015 05:17:51] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:55,372 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:55,373 None,None
+INFO: 2015-09-27 05:17:55,373 127.0.0.1 - - [27/Sep/2015 05:17:55] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:17:59,759 "GET /v1/bookings/track_ride HTTP/1.1" 401 69
+INFO: 2015-09-27 05:17:59,760 None,None
+INFO: 2015-09-27 05:17:59,760 127.0.0.1 - - [27/Sep/2015 05:17:59] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:18:02,574 127.0.0.1 - - [27/Sep/2015 05:18:02] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 05:18:02,611 in save token, token : a0172c8eff8e43faa7aeade503bdbc9e
+INFO: 2015-09-27 05:18:02,611 after assigning to sesion, token :a0172c8eff8e43faa7aeade503bdbc9e
+INFO: 2015-09-27 05:18:02,612 127.0.0.1 - - [27/Sep/2015 05:18:02] "POST /save_token HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:03,775 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:03,776 12.950074,77.641727
+INFO: 2015-09-27 05:18:03,777 127.0.0.1 - - [27/Sep/2015 05:18:03] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:18:06,869 127.0.0.1 - - [27/Sep/2015 05:18:06] "GET /access_token HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:08,182 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:08,183 12.950074,77.641727
+INFO: 2015-09-27 05:18:08,184 127.0.0.1 - - [27/Sep/2015 05:18:08] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:12,170 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:12,171 12.950074,77.641727
+INFO: 2015-09-27 05:18:12,172 127.0.0.1 - - [27/Sep/2015 05:18:12] "GET /map HTTP/1.1" 200 -
+INFO: 2015-09-27 05:18:14,451 127.0.0.1 - - [27/Sep/2015 05:18:14] "GET /is_logged_in HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:16,428 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:16,429 12.950074,77.641727
+INFO: 2015-09-27 05:18:16,431 127.0.0.1 - - [27/Sep/2015 05:18:16] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:20,397 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:20,398 12.950074,77.641727
+INFO: 2015-09-27 05:18:20,399 127.0.0.1 - - [27/Sep/2015 05:18:20] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:24,515 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:24,515 12.950074,77.641727
+INFO: 2015-09-27 05:18:24,516 127.0.0.1 - - [27/Sep/2015 05:18:24] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:28,796 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:28,797 12.950074,77.641727
+INFO: 2015-09-27 05:18:28,798 127.0.0.1 - - [27/Sep/2015 05:18:28] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:32,901 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:32,902 12.950074,77.641727
+INFO: 2015-09-27 05:18:32,903 127.0.0.1 - - [27/Sep/2015 05:18:32] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 05:18:36,900 "GET /v1/bookings/track_ride HTTP/1.1" 200 181
+INFO: 2015-09-27 05:18:36,901 12.950074,77.641727
+INFO: 2015-09-27 05:18:36,903 127.0.0.1 - - [27/Sep/2015 05:18:36] "GET /map HTTP/1.1" 200 -

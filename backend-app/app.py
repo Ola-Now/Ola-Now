@@ -23,6 +23,8 @@ logging.basicConfig(
     level=logging.DEBUG,
 )
 
+counter = 100
+
 with open('config.json') as f:
     config = json.load(f)
 
@@ -137,12 +139,6 @@ def cancel():
     )
     return response.text
 
-@app.route('/map', methods=['GET'])
-def map():
-    return render_template(
-        'map.html'
-    )
-
 @app.route('/track', methods=['GET'])
 def track():
     url = "http://sandbox-t.olacabs.com/v1/bookings/track_ride"
@@ -156,6 +152,30 @@ def track():
         headers=headers
     )
     return response.text
+
+@app.route('/map', methods=['GET'])
+def map():
+    url = "http://sandbox-t.olacabs.com/v1/bookings/track_ride"
+
+    headers={
+        'X-APP-TOKEN': config.get('x_app_token'),
+        'Authorization': 'Bearer %s' % session.get('access_token')
+    }
+    response = app.requests_session.get(
+        url,
+        headers=headers
+    )
+    response_json=response.json()
+    lat=response_json.get('driver_lat')
+    long=response_json.get('driver_lng')
+    logging.info(str(lat) + "," + str(long))
+
+    return render_template(
+        'map.html',
+        #token=response.json().get(request)
+        lat=lat,
+        long=long
+    )
 
 @app.route('/is_logged_in', methods=['GET'])
 def logged_in():
@@ -314,6 +334,10 @@ def me():
         endpoint='me',
         data=response.text,
     )
+
+@app.route('/access_token', methods=['GET'])
+def access_token():
+    return session.get('access_token')
 
 def generate_ola_headers():
     return {

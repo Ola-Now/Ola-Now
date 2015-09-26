@@ -12,6 +12,7 @@ function onPageDetailsReceived(pageDetails)  {
     myLong=pageDetails.myLong;
     destLat=pageDetails.latitude;
     destLong=pageDetails.longitude;
+    var product_result=getProducts(pageDetails.myLat,pageDetails.myLong);
 } 
 
 function cancelCab() {

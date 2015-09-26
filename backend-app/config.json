@@ -1,6 +1,6 @@
 {
     "access_token_url": "https://login.uber.com/oauth/token",
-    "authorize_url": "https://login.uber.com/oauth/authorize",
+    "authorize_url": "http://sandbox-t.olacabs.com/oauth2/authorize",
     "base_url": "http://sandbox-t.olacabs.com/",
     "scopes": ["profile", "history_lite"],
     "name": "MyCabApp",

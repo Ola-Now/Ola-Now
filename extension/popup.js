@@ -12,24 +12,6 @@ function onPageDetailsReceived(pageDetails)  {
     myLong=pageDetails.myLong;
     destLat=pageDetails.latitude;
     destLong=pageDetails.longitude;
-
-    // get cookie named logged_in for domain .uber.com
-    chrome.cookies.getAll({"name": "logged_in", "domain": ".uber.com"},
-        // callback function to be called when getAll() returns
-        function(cookie) {
-            // if cookie exists and it's value is true
-            if ((cookie.length) && (!cookie[0].value.localeCompare("true"))) {    // localeCompare returns 0 when strings are equal
-                //alert("logged in");
-                var product_result=getProducts(pageDetails.myLat,pageDetails.myLong);
-                //alert(product_result);
-                //statusDisplay.innerHTML=product_result;
-            }
-            else{
-                alert("logged out");
-                chrome.tabs.create({'url': 'https://ola-app.herokuapp.com/', }, function(window) {});
-            }
-        } 
-    );
 } 
 
 function cancelCab() {

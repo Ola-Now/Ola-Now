@@ -94,22 +94,27 @@ def demo():
     return render_template('demo.html', token=session.get('access_token'))
 
 
-@app.route('/products', methods=['GET'])
+@app.route('/products', methods=['POST'])
 def products():
     """Example call to the products endpoint.
 
     Returns all the products currently available in San Francisco.
     """
     post_json=request.get_json(force=True)
-    url = config.get('base_uber_url') + 'products'
+    category=request.args['category']
+    url = config.get('base_ola_url') + 'products'
     params = {
-        'latitude': post_json['start_latitude'],
-        'longitude': post_json['start_longitude'],
+        'pickup_lat': post_json['start_latitude'],
+        'pickup_lng': post_json['start_longitude'],
+        'drop_lat': post_json['end_latitude'],
+        'drop_lng': post_json['end_longitude'],
+        'category': category
     }
 
     response = app.requests_session.get(
         url,
-        headers=generate_ride_headers(session.get('access_token')),
+        #headers=generate_ride_headers(session.get('access_token')),
+        headers=generate_ola_headers(),
         params=params,
     )
 
@@ -220,6 +225,11 @@ def me():
         data=response.text,
     )
 
+def generate_ola_headers():
+    return {
+        'X-APP-TOKEN': config.get('x_app_token'),
+        'Content-Type': 'application/json',
+    }
 
 def get_redirect_uri(request):
     """Return OAuth redirect URI."""

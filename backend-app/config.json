@@ -1,13 +1,14 @@
 {
     "access_token_url": "https://login.uber.com/oauth/token",
     "authorize_url": "https://login.uber.com/oauth/authorize",
-    "base_url": "https://login.uber.com/",
+    "base_url": "http://sandbox-t.olacabs.com/",
     "scopes": ["profile", "history_lite"],
     "name": "MyCabApp",
-    "base_uber_url": "https://api.uber.com/v1/",
+    "base_ola_url": "http://sandbox-t.olacabs.com/v1/",
     "base_uber_url_v1_1" : "https://api.uber.com/v1.1/",
     "start_latitude": "12.957067",
     "start_longitude":  "77.699449",
     "end_latitude": "12.931167",
-    "end_longitude": "77.685732"
+    "end_longitude": "77.685732",
+    "x_app_token" : "922f372f543b466cb1fb9ae28aa6796f"
 }

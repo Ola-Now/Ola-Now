@@ -20,7 +20,7 @@
   ],
 
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js", "thirdParty/jquery-2.1.4.js"]
   },
 
   "permissions": [

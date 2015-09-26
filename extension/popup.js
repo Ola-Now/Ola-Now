@@ -1,3 +1,8 @@
+function testAlert(){
+    alert("Booked cab! :)");
+}
+
+
 // This callback function is called when the content script has been 
 // injected and returned its results
 function onPageDetailsReceived(pageDetails)  { 
@@ -7,6 +12,8 @@ function onPageDetailsReceived(pageDetails)  {
     document.getElementById('myLong').value = pageDetails.myLong;
     myLat=pageDetails.myLat;
     myLong=pageDetails.myLong;
+    destLat=pageDetails.latitude;
+    destLong=pageDetails.longitude;
 
     // get cookie named logged_in for domain .uber.com
     chrome.cookies.getAll({"name": "logged_in", "domain": ".uber.com"},
@@ -29,10 +36,6 @@ function onPageDetailsReceived(pageDetails)  {
 
 // Global reference to the status display SPAN
 var statusDisplay = null;
-var latitude;
-var longitude;
-var myLat;
-var myLong;
 
 // POST the data to the server using XMLHttpRequest
 function bookCab() {
@@ -85,7 +88,7 @@ function bookCab() {
 }
 
 function getProducts(lat,long){
-    var postUrl = 'http://localhost:7000/products';
+    var postUrl = 'http://localhost:7000/products?category=sedan';
     var xhr = new XMLHttpRequest();
     xhr.open('POST', postUrl, false);
     xhr.setRequestHeader('Content-type', 'application/json');
@@ -101,21 +104,32 @@ function getProducts(lat,long){
                 parsedResponse = JSON.parse(xhr.responseText);
                 products.innerHTML = "<h4>Cabs available</h4>";
                 var divContent = "";
-
-                for(i=0;i < parsedResponse.products.length; i++)
+                alert(parsedResponse.categories.length);
+                for(i=0;i < parsedResponse.categories.length; i++)
                 {
 
                     //<button id='booking' type='button' value='abcdef'>Book this!</button> </div>
-                    divContent = "<div class='products_results" + i + "'><p><b>" + parsedResponse.products[i].display_name + "</b>";
-                    divContent += "<br/>Price/km: " + parsedResponse.products[i].price_details.cost_per_distance;
-                    divContent += "<br/>Minimum fare: " + parsedResponse.products[i].price_details.minimum + "</p>";
-                    divContent += "<button type='button' class='booking' value='" + parsedResponse.products[i].product_id + "'>Book this!</button> </div>"
+
+                    divContent = "<div class='products_results" + i + "'><p>" + parsedResponse.categories[i].id;
+                    divContent += "<br/>ETA: " + parsedResponse.categories[i].eta;
+                    divContent += "<br/>Price/km: " + parsedResponse.categories[i].cost_per_distance;
+                    divContent += "<br/>Base fare: " + parsedResponse.categories[i].base_fare;
+                    divContent += "<br/>Distance: " + parsedResponse.ride_estimate[i].distance;
+                    divContent += "<br/>Travel time: " + parsedResponse.ride_estimate[i].travel_time_in_minutes;
+                    divContent += "<br/>Fare estimate: " + parsedResponse.ride_estimate[i].amount_min + " - " + parsedResponse.ride_estimate[i].amount_max;
+                    divContent += "<button type='button' id='booking1' class='booking' value='" + parsedResponse.categories[i].id + "'>Book this!</button> </div>"
+
+                    // divContent = "<div class='products_results" + i + "'><p><b>" + parsedResponse.categories[i].display_name + "</b>";
+                    // divContent += "<br/>Price/km: " + parsedResponse.categories[i].price_details.cost_per_distance;
+                    // divContent += "<br/>Minimum fare: " + parsedResponse.products[i].price_details.minimum + "</p>";
+                    // divContent += "<button type='button' class='booking' value='" + parsedResponse.products[i].product_id + "'>Book this!</button> </div>"
                     products.innerHTML += divContent;
                     //products.innerHTML += parsedResponse.products[i].product_id for booking;
                 }
 
 
                 var bookbutton = document.getElementsByClassName("booking");
+                var bookbuttons = document.getElementById("booking1");
                 //alert(bookbutton.length); 
                 // for(i=0; i<bookbutton.length; i++){                    
                 //     //alert("Adding listener to " + bookbutton[i].value);
@@ -124,13 +138,11 @@ function getProducts(lat,long){
                 //         alert("Booked!" + bookbutton[i].value);
                 //     },false);
                 // }
-                function testAlert(){
-                    alert("done");
-                }
-                bookbutton[0].addEventListener("click", testAlert());
-                bookbutton[1].addEventListener("click", testAlert());
-                bookbutton[2].addEventListener("click", testAlert());
-                bookbutton[3].addEventListener("click", testAlert());
+
+                //bookbutton[0].addEventListener("click", testAlert, false);
+                // bookbutton[1].addEventListener("click", testAlert, false);
+                // bookbutton[2].addEventListener("click", testAlert, false);
+                // bookbutton[3].addEventListener("click", testAlert, false);
 
             } else {
                 // Show what went wrong
@@ -138,9 +150,11 @@ function getProducts(lat,long){
             }
         }
     };
-
+    
+    //alert("start_latitude "+ myLat + " start_longitude " + myLong + " end_latitude " + destLat + " end_longitude "+destLong);
+    
     // Send the request and set status
-    xhr.send(JSON.stringify({"start_latitude":lat,"start_longitude":long}));
+    xhr.send(JSON.stringify({"start_latitude":myLat,"start_longitude":myLong,"end_latitude":destLat,"end_longitude":destLong}));
 
 }
 

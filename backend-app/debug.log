@@ -945,3 +945,5 @@ DEBUG: 2015-09-27 10:20:18,458 "GET /v1/bookings/create?category=sedan&pickup_mo
 INFO: 2015-09-27 10:20:18,460 127.0.0.1 - - [27/Sep/2015 10:20:18] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
 DEBUG: 2015-09-27 10:20:27,941 "GET /v1/bookings/track_ride HTTP/1.1" 200 180
 INFO: 2015-09-27 10:20:27,944 127.0.0.1 - - [27/Sep/2015 10:20:27] "GET /track HTTP/1.1" 200 -
+INFO: 2015-09-27 10:25:56,761  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 10:25:56,783  * Restarting with reloader

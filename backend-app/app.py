@@ -209,12 +209,14 @@ def get_ride_info():
     with open("test.json") as json_file:
         try:
             parsed_json = json.load(json_file)
-        except ValueError:
+        except (IOError,ValueError):
             parsed_json = {}
     if session.get('access_token'):
-        return json.dumps(parsed_json[session.get('access_token')])
-    else:
-        return "false"
+        try:
+            return json.dumps(parsed_json[session.get('access_token')])
+        except KeyError:
+            return "false"
+    return "false"
 
 
 def generate_ola_headers():

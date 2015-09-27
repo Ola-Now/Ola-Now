@@ -14,6 +14,13 @@ All code is provided under an MIT License. This is a rough prototype built withi
 * You can close and reopen the window, and the extension will remember any active booking you have and display its information.
 * Of course, this extension can book a cab from your current location without any cordinates too. In a hurry? The Ola website currently does not have a “Ride Now” functionality, so this can be used to get a cab immediately too.
 
+#### Behind the scenes
+The Chrome extension is the client. 
+
+An API proxy server sits as the middle man between the extension and Ola API, and provides its own wrappers for all the API calls that the extension needs. This server is written with the awesome Flask microframework, in Python.
+
+This approach was used in part for security purposes, as moving oAuth2 completely to client is inherently insecure, and anybody could grab information required to masquerade as the extension.
+
 #### Ok dude, but where's the Chrome extension?
 This is a proof of concept, and does not actually work right now because of two reasons: the sandboxed API, and not having deployed the API proxy server anywhere. You can still enable developer mode in Chrome and load the unpacked extension.
 

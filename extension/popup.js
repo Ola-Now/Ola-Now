@@ -4,17 +4,13 @@ var statusDisplay = null;
 // This callback function is called when the content script has been 
 // injected and returned its results
 function onPageDetailsReceived(pageDetails)  { 
-    // document.getElementById('latitude').value = pageDetails.latitude; 
-    // document.getElementById('longitude').value = pageDetails.longitude;
-    // document.getElementById('myLat').value = pageDetails.myLat; 
-    // document.getElementById('myLong').value = pageDetails.myLong;
     myLat=pageDetails.myLat;
     myLong=pageDetails.myLong;
     destLat=pageDetails.latitude;
     destLong=pageDetails.longitude;
     var destInfo = document.getElementById('destination-info');
-    destInfo.innerHTML = "We detected your location as " + pageDetails.myLat + ", " + pageDetails.myLong + "<br/>";
-    destInfo.innerHTML += "The destination cordinates are " + pageDetails.latitude + ", " + pageDetails.longitude;
+    destInfo.innerHTML = "<b>Your location:</b> " + pageDetails.myLat + ", " + pageDetails.myLong + "<br/>";
+    destInfo.innerHTML += "<b>Destination cordinates:</b> " + pageDetails.latitude + ", " + pageDetails.longitude;
     var product_result=getProducts(pageDetails.myLat,pageDetails.myLong);
 } 
 
@@ -93,13 +89,14 @@ function bookCab() {
                 container.innerHTML = "";
                 var divContent = "";
 
-                divContent = "<div class='products_results" + i + "'><p>" + "Driver name: " +parsedResponse.driver_name;
-                divContent += "<br/>Driver number: " + parsedResponse.driver_number;
-                divContent += "<br/>Cab number: " + parsedResponse.cab_number;
-                divContent += "<br/>ETA: " + parsedResponse.eta + " mins";
-                divContent += "<br/><button type='button' id='track' value='" + parsedResponse.crn + "'>Track ride</button>"
-                divContent += "<br/><button type='button' id='cancel' value='" + parsedResponse.crn + "'>Cancel ride</button>"
-                divContent += "</div>";
+                divContent = "<div class='products_results" + i + "'><div class='driver'><h3>Driver details</h3>";
+                divContent += "<div class='driver-buttons'><button type='button' id='track' value='" + parsedResponse.crn + "'>Track ride</button>"
+                divContent += "<button type='button' id='cancel' value='" + parsedResponse.crn + "'>Cancel ride</button></div>"
+                divContent += "<p><b>Name:</b> " +parsedResponse.driver_name;
+                divContent += "<br/><b>Driver number:</b> " + parsedResponse.driver_number;
+                divContent += "<br/><b>Cab number:</b> " + parsedResponse.cab_number;
+                divContent += "<br/><b>ETA:</b> " + parsedResponse.eta + " mins";
+                divContent += "</p></div></div>";
 
                 container.innerHTML += divContent;
             
@@ -148,14 +145,14 @@ function getProducts(lat,long){
                     for(i=0;i < parsedResponse.categories.length; i++)
                     {
 
-                        divContent = "<div class='products_results" + i + "'><p>Type: " + parsedResponse.categories[i].display_name;
-                        divContent += "<br/>ETA: " + parsedResponse.categories[i].eta + " mins";
-                        divContent += "<br/>Price/km: " + parsedResponse.categories[i].fare_breakup[i].cost_per_distance;
-                        divContent += "<br/>Base fare: " + parsedResponse.categories[i].fare_breakup[i].base_fare;
-                        divContent += "<br/>Distance: " + parsedResponse.ride_estimate[i].distance;
-                        divContent += "<br/>Travel time: " + parsedResponse.ride_estimate[i].travel_time_in_minutes;
-                        divContent += "<br/>Fare estimate: " + parsedResponse.ride_estimate[i].amount_min + " - " + parsedResponse.ride_estimate[i].amount_max;
-                        divContent += "<br/><button type='button' id='booking1' class='booking' value='" + parsedResponse.categories[i].id + "'>Book this!</button> </div>"
+                        divContent = "<div class='products_results" + i + "'><div class='book-details'><span>Type: " + parsedResponse.categories[i].display_name + "</span>";
+                        divContent += "<span>ETA: " + parsedResponse.categories[i].eta + " mins" + "</span>";
+                        divContent += "<span>Price/km: " + parsedResponse.categories[i].fare_breakup[i].cost_per_distance + "</span>";
+                        divContent += "<span>Base fare: " + parsedResponse.categories[i].fare_breakup[i].base_fare + "</span>";
+                        divContent += "<span>Distance: " + parsedResponse.ride_estimate[i].distance + "</span>";
+                        divContent += "<span>Travel time: " + parsedResponse.ride_estimate[i].travel_time_in_minutes + "</span>";
+                        divContent += "<span>Fare estimate: " + parsedResponse.ride_estimate[i].amount_min + " - " + parsedResponse.ride_estimate[i].amount_max + "</div>";
+                        divContent += "<div class='book-now'><img src='" + parsedResponse.categories[i].image + "' /><br/><button type='button' id='booking1' class='booking' value='" + parsedResponse.categories[i].id + "'>Book this!</button></div></div>"
                         products.innerHTML += divContent;
                     }
 

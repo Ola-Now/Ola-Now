@@ -118,10 +118,10 @@ function getProducts(lat,long){
                     for(i=0;i < parsedResponse.categories.length; i++)
                     {
 
-                        divContent = "<div class='products_results" + i + "'><p>Cab type: " + parsedResponse.categories[i].display_name;
-                        divContent += "<br/>ETA: " + parsedResponse.categories[i].eta;
-                        divContent += "<br/>Price/km: " + parsedResponse.categories[i].cost_per_distance;
-                        divContent += "<br/>Base fare: " + parsedResponse.categories[i].base_fare;
+                        divContent = "<div class='products_results" + i + "'><p>Type: " + parsedResponse.categories[i].display_name;
+                        divContent += "<br/>ETA: " + parsedResponse.categories[i].eta + " mins";
+                        divContent += "<br/>Price/km: " + parsedResponse.categories[i].fare_breakup[i].cost_per_distance;
+                        divContent += "<br/>Base fare: " + parsedResponse.categories[i].fare_breakup[i].base_fare;
                         divContent += "<br/>Distance: " + parsedResponse.ride_estimate[i].distance;
                         divContent += "<br/>Travel time: " + parsedResponse.ride_estimate[i].travel_time_in_minutes;
                         divContent += "<br/>Fare estimate: " + parsedResponse.ride_estimate[i].amount_min + " - " + parsedResponse.ride_estimate[i].amount_max;

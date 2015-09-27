@@ -18,6 +18,10 @@ function onPageDetailsReceived(pageDetails)  {
     var product_result=getProducts(pageDetails.myLat,pageDetails.myLong);
 } 
 
+function trackCab() {
+    chrome.tabs.create({'url': 'http://localhost/map', }, function(window) {});
+}
+
 function cancelCab() {
     var crn = document.getElementById("cancel").value;    
     var postUrl = 'http://localhost/cancel?crn=' + crn;
@@ -67,16 +71,16 @@ function bookCab() {
                 divContent += "<br/>Driver number: " + parsedResponse.driver_number;
                 divContent += "<br/>Cab number: " + parsedResponse.cab_number;
                 divContent += "<br/>ETA: " + parsedResponse.eta + " mins";
-                //divContent += "<br/><button type='button' id='track' value='" + crn + "'>Track ride</button>"
+                divContent += "<br/><button type='button' id='track' value='" + parsedResponse.crn + "'>Track ride</button>"
                 divContent += "<br/><button type='button' id='cancel' value='" + parsedResponse.crn + "'>Cancel ride</button>"
                 divContent += "</div>";
 
                 container.innerHTML += divContent;
             
-                //var trackButton = document.getElementById("track");
+                var trackButton = document.getElementById("track");
                 var cancelButton = document.getElementById("cancel");
                 
-                //trackButton.addEventListener("click", trackCab, false);
+                trackButton.addEventListener("click", trackCab, false);
                 cancelButton.addEventListener("click", cancelCab, false);                
 
             } else {
@@ -131,9 +135,6 @@ function getProducts(lat,long){
 
                     var bookbutton = document.getElementsByClassName("booking"); 
                     bookbutton[0].addEventListener("click", bookCab, false);
-                    bookbutton[1].addEventListener("click", bookCab, false);
-                    bookbutton[2].addEventListener("click", bookCab, false);
-                    bookbutton[3].addEventListener("click", bookCab, false);
 
                 }
 

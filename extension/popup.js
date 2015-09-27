@@ -18,11 +18,11 @@ function onPageDetailsReceived(pageDetails)  {
         if (xhr.readyState == 4) {
             if (xhr.status == 200) {
                 parsedResponse = JSON.parse(xhr.responseText);
-                alert(parsedResponse);
+                //alert(parsedResponse);
                 //alert(typeof parsedResponse);
                 if (parsedResponse == true){                    
                     var postUrl2 = 'http://localhost/get_ride_info';
-                    alert(postUrl2);
+                    //alert(postUrl2);
                     var xhr2 = new XMLHttpRequest();
                     xhr2.open('GET', postUrl2, false);
                     xhr2.setRequestHeader('Content-type', 'application/json');
@@ -74,7 +74,7 @@ function onPageDetailsReceived(pageDetails)  {
 
             }
             else{
-                alert("Logged out");
+                // do nothing
             }
 
          }    

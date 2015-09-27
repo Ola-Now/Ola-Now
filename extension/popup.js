@@ -10,7 +10,12 @@ function onPageDetailsReceived(pageDetails)  {
     destLong=pageDetails.longitude;
     var destInfo = document.getElementById('destination-info');
     destInfo.innerHTML = "<b>Your location:</b> " + pageDetails.myLat + ", " + pageDetails.myLong + "<br/>";
-    destInfo.innerHTML += "<b>Destination cordinates:</b> " + pageDetails.latitude + ", " + pageDetails.longitude;
+    if(destLat == undefined || typeof destLat == null){
+
+    }
+    else {
+        destInfo.innerHTML += "<b>Destination cordinates:</b> " + pageDetails.latitude + ", " + pageDetails.longitude;
+    }
     var product_result=getProducts(pageDetails.myLat,pageDetails.myLong);
 } 
 
@@ -149,10 +154,14 @@ function getProducts(lat,long){
                         divContent += "<span>ETA: " + parsedResponse.categories[i].eta + " mins" + "</span>";
                         divContent += "<span>Price/km: " + parsedResponse.categories[i].fare_breakup[i].cost_per_distance + "</span>";
                         divContent += "<span>Base fare: " + parsedResponse.categories[i].fare_breakup[i].base_fare + "</span>";
-                        divContent += "<span>Distance: " + parsedResponse.ride_estimate[i].distance + "</span>";
-                        divContent += "<span>Travel time: " + parsedResponse.ride_estimate[i].travel_time_in_minutes + "</span>";
-                        divContent += "<span>Fare estimate: " + parsedResponse.ride_estimate[i].amount_min + " - " + parsedResponse.ride_estimate[i].amount_max + "</div>";
-                        divContent += "<div class='book-now'><img src='" + parsedResponse.categories[i].image + "' /><br/><button type='button' id='booking1' class='booking' value='" + parsedResponse.categories[i].id + "'>Book this!</button></div></div>"
+
+                        if( ! (destLat == undefined || typeof destLat == null) ) {
+                            divContent += "<span>Distance: " + parsedResponse.ride_estimate[i].distance + "</span>";
+                            divContent += "<span>Travel time: " + parsedResponse.ride_estimate[i].travel_time_in_minutes + "</span>";
+                            divContent += "<span>Fare estimate: " + parsedResponse.ride_estimate[i].amount_min + " - " + parsedResponse.ride_estimate[i].amount_max;
+                        }
+                        divContent += "</div><div class='book-now'><img src='" + parsedResponse.categories[i].image + "' /><br/><button type='button' id='booking1' class='booking' value='" + parsedResponse.categories[i].id + "'>Book this!</button></div></div>"
+
                         products.innerHTML += divContent;
                     }
 
@@ -167,10 +176,14 @@ function getProducts(lat,long){
             }
         }
     };
-    
-    // Send the request and set status
-    xhr.send(JSON.stringify({"start_latitude":myLat,"start_longitude":myLong,"end_latitude":destLat,"end_longitude":destLong}));
-
+    if(destLat == undefined || typeof destLat == null){
+        //No destination cordinates found,
+        xhr.send(JSON.stringify({"start_latitude":myLat,"start_longitude":myLong,"end_latitude":destLat,"end_longitude":destLong})); 
+    }
+    else {
+        // Send the request and set status
+        xhr.send(JSON.stringify({"start_latitude":myLat,"start_longitude":myLong,"end_latitude":0,"end_longitude":0}));
+    }
 }
 
 // When the popup HTML has loaded

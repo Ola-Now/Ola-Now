@@ -144,13 +144,21 @@ def products():
     post_json=request.get_json(force=True)
     category=request.args['category']
     url = config.get('base_ola_url') + 'products'
-    params = {
-        'pickup_lat': post_json['start_latitude'],
-        'pickup_lng': post_json['start_longitude'],
-        'drop_lat': post_json['end_latitude'],
-        'drop_lng': post_json['end_longitude'],
-        'category': category
-    }
+    if post_json['end_latitude'] != 0:
+        params = {
+            'pickup_lat': post_json['start_latitude'],
+            'pickup_lng': post_json['start_longitude'],
+            'drop_lat': post_json['end_latitude'],
+            'drop_lng': post_json['end_longitude'],
+            'category': category
+            }
+
+    else:
+        params = {
+            'pickup_lat': post_json['start_latitude'],
+            'pickup_lng': post_json['start_longitude'],
+            'category': category
+            }
 
     response = app.requests_session.get(
         url,

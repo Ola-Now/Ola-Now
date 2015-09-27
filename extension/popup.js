@@ -30,20 +30,33 @@ function onPageDetailsReceived(pageDetails)  {
                         if (xhr2.readyState == 4) {
                             if (xhr2.status == 200) {
                                 parsedResponse = JSON.parse(xhr2.responseText);
-                                alert(parsedResponse);
-                                container.innerHTML = "";
+                                //alert(typeof parsedResponse); //object or false
+                                //alert(parsedResponse);
+                                if(parsedResponse == false){
+                                    // call getProducts()
+                                    getProducts();
 
-                                crn = parsedResponse.crn;
+                                }
+                                else {
+                                    container.innerHTML = "";
+                                    divContent = "<div class='products_results0'>"
+                                    divContent += "<div class='driver'>You have already booked a cab.<h3>Driver details</h3>";
+                                    divContent += "<div class='driver-buttons'><button class='booking' type='button' id='track' value='" + parsedResponse.crn + "'><i class='icon-map-marker icon-2'></i> &nbsp; Track ride</button>"
+                                    divContent += "<button type='button' class='booking' id='cancel' value='" + parsedResponse.crn + "'><i class='fa fa-times'></i> Cancel ride</button></div>";
+                                    divContent += "<p><b>Name:</b> " + parsedResponse.driver_name;
+                                    divContent += "<p/><p><b>Cab number:</b> " + parsedResponse.cab_number;
+                                    divContent += "<p/><p><b>✆</b> " + parsedResponse.driver_number;
+                                    divContent += "<p/><p><b>ETA:</b> " + parsedResponse.eta + " mins";
+                                    divContent += "</p></div></div>";
+                                    container.innerHTML += divContent;
 
-                                divContent = "<div class='products_results0'>You have already booked a cab.<div class='driver'><h3>Driver details</h3>";
-                                divContent += "<p><b>Name:</b> " + parsedResponse.driver_name;
-                                divContent += "<p/><p><b>Cab number:</b> " + parsedResponse.cab_number;
-                                divContent += "<p/><p><b>✆</b> " + parsedResponse.driver_number;
-                                divContent += "<p/><p><b>ETA:</b> " + parsedResponse.eta + " mins";
-                                divContent += "</p></div></div>";
-                                container.innerHTML += divContent;
+                                    var trackButton = document.getElementById("track");
+                                    var cancelButton = document.getElementById("cancel");
+                                    
+                                    trackButton.addEventListener("click", trackCab, false);
+                                    cancelButton.addEventListener("click", cancelCab, false);                
 
-
+                                }
 
                             } else {
                                 statusDisplay.innerHTML = 'Error saving: ' + xhr2.statusText;
@@ -53,7 +66,7 @@ function onPageDetailsReceived(pageDetails)  {
                     xhr2.send();
                 }
                 else{
-
+                    getProducts();
                 }
 
 

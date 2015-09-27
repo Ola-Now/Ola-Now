@@ -72,11 +72,11 @@ def book():
     if session.get('access_token'):
         new_dict = {session.get('access_token'): json.loads(response.text)}
 
-        with open("test.json") as json_file:
-            try:
+        try:
+            with open("test.json") as json_file:
                 data = json.load(json_file)
-            except ValueError:
-                data = {}
+        except (ValueError, IOError):
+            data = {}
         logging.info(data)
         data.update(new_dict)
 
@@ -198,11 +198,13 @@ def access_token():
 
 @app.route('/get_ride_info', methods=['GET'])
 def get_ride_info():
-    with open("test.json") as json_file:
-        try:
-            parsed_json = json.load(json_file)
-        except ValueError:
-            parsed_json = {}
+    try:
+        with open("test.json") as json_file:
+                parsed_json = json.load(json_file)
+    except ValueError:
+        parsed_json = {}
+    except IOError:
+        return "false"
     logging.info(json.dumps(parsed_json[session.get('access_token')]))
     if session.get('access_token'):
         return json.dumps(parsed_json[session.get('access_token')])

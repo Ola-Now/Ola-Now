@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "OLA extension",
-  "description": "This extension is shit",
+  "name": "OLA Yes Abhi!",
+  "description": "Book cabs with a few clicks",
   "version": "1.0",
 
   "browser_action": {
@@ -21,6 +21,10 @@
 
   "background": {
     "scripts": ["background.js"]
+  },
+
+  "icons": {
+    "48": "icon48.png"
   },
 
   "permissions": [

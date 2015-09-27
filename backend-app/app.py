@@ -166,6 +166,10 @@ def products():
 def access_token():
     return session.get('access_token')
 
+@app.route('/get_ride_info', methods=['GET'])
+def getRideInfo():
+    return session.get('access_token')
+
 def generate_ola_headers():
     return {
         'X-APP-TOKEN': config.get('x_app_token'),

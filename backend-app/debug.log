@@ -871,3 +871,62 @@ DEBUG: 2015-09-27 05:31:04,102 "GET /v1/products?category=sedan&drop_lat=12.96&p
 INFO: 2015-09-27 05:31:04,105 127.0.0.1 - - [27/Sep/2015 05:31:04] "POST /products?category=sedan HTTP/1.1" 200 -
 INFO: 2015-09-27 07:34:45,886  * Detected change in 'app.py', reloading
 INFO: 2015-09-27 07:34:45,981  * Restarting with reloader
+INFO: 2015-09-27 07:44:49,093  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 07:45:00,068  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 07:45:06,178 127.0.0.1 - - [27/Sep/2015 07:45:06] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 07:45:34,398 127.0.0.1 - - [27/Sep/2015 07:45:34] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 07:45:34,428 in save token, token : f1d9b8fd68fe4f4880944793095196a1
+INFO: 2015-09-27 07:45:34,428 after assigning to sesion, token :f1d9b8fd68fe4f4880944793095196a1
+INFO: 2015-09-27 07:45:34,430 127.0.0.1 - - [27/Sep/2015 07:45:34] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 07:45:41,655 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 07:45:42,743 "GET /v1/products?category=sedan&drop_lat=0.0000000000&pickup_lat=12.9501899&pickup_lng=77.6417208&drop_lng=0.0000000000 HTTP/1.1" 200 85
+INFO: 2015-09-27 07:45:42,745 127.0.0.1 - - [27/Sep/2015 07:45:42] "POST /products?category=sedan HTTP/1.1" 200 -
+DEBUG: 2015-09-27 07:45:58,409 "GET /v1/products?category=sedan&drop_lat=13.0217305556&pickup_lat=12.9501667&pickup_lng=77.6416661&drop_lng=77.6400527778 HTTP/1.1" 200 338
+INFO: 2015-09-27 07:45:58,411 127.0.0.1 - - [27/Sep/2015 07:45:58] "POST /products?category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 07:46:04,937 127.0.0.1 - - [27/Sep/2015 07:46:04] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 07:46:04,941 f1d9b8fd68fe4f4880944793095196a1
+DEBUG: 2015-09-27 07:46:06,347 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.9501667&pickup_lng=77.6416661 HTTP/1.1" 200 160
+INFO: 2015-09-27 07:46:06,349 127.0.0.1 - - [27/Sep/2015 07:46:06] "GET /book?category=sedan&myLat=12.9501667&myLong=77.6416661 HTTP/1.1" 200 -
+DEBUG: 2015-09-27 07:46:12,516 "GET /v1/bookings/track_ride HTTP/1.1" 200 183
+INFO: 2015-09-27 07:46:12,517 12.950074,77.641727
+INFO: 2015-09-27 07:46:12,522 127.0.0.1 - - [27/Sep/2015 07:46:12] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 07:46:20,077 "GET /v1/products?category=sedan&drop_lat=13.0217305556&pickup_lat=12.9501634&pickup_lng=77.6416673&drop_lng=77.6400527778 HTTP/1.1" 200 338
+INFO: 2015-09-27 07:46:20,079 127.0.0.1 - - [27/Sep/2015 07:46:20] "POST /products?category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 07:46:24,976 127.0.0.1 - - [27/Sep/2015 07:46:24] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 07:46:24,979 f1d9b8fd68fe4f4880944793095196a1
+DEBUG: 2015-09-27 07:46:26,818 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.9501634&pickup_lng=77.6416673 HTTP/1.1" 200 159
+INFO: 2015-09-27 07:46:26,820 127.0.0.1 - - [27/Sep/2015 07:46:26] "GET /book?category=sedan&myLat=12.9501634&myLong=77.6416673 HTTP/1.1" 200 -
+INFO: 2015-09-27 07:47:21,202  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 07:47:39,491  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 07:47:39,491  * Restarting with reloader
+INFO: 2015-09-27 07:47:53,739 127.0.0.1 - - [27/Sep/2015 07:47:53] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 07:48:07,301 127.0.0.1 - - [27/Sep/2015 07:48:07] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 07:48:07,333 in save token, token : 69a97ebc1bac4b1da27b7555ce9b59a3
+INFO: 2015-09-27 07:48:07,333 after assigning to sesion, token :69a97ebc1bac4b1da27b7555ce9b59a3
+INFO: 2015-09-27 07:48:07,334 127.0.0.1 - - [27/Sep/2015 07:48:07] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 07:48:11,972 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 07:48:12,658 "GET /v1/products?category=sedan&drop_lat=13.0217305556&pickup_lat=12.9502582&pickup_lng=77.6416913&drop_lng=77.6400527778 HTTP/1.1" 200 338
+INFO: 2015-09-27 07:48:12,660 127.0.0.1 - - [27/Sep/2015 07:48:12] "POST /products?category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 07:48:22,664 127.0.0.1 - - [27/Sep/2015 07:48:22] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 07:48:22,668 69a97ebc1bac4b1da27b7555ce9b59a3
+DEBUG: 2015-09-27 07:48:24,427 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950258199999999&pickup_lng=77.64169129999999 HTTP/1.1" 200 160
+INFO: 2015-09-27 07:48:24,429 127.0.0.1 - - [27/Sep/2015 07:48:24] "GET /book?category=sedan&myLat=12.950258199999999&myLong=77.64169129999999 HTTP/1.1" 200 -
+DEBUG: 2015-09-27 07:48:26,571 "GET /v1/bookings/track_ride HTTP/1.1" 200 179
+INFO: 2015-09-27 07:48:26,572 12.950074,77.641727
+INFO: 2015-09-27 07:48:26,576 127.0.0.1 - - [27/Sep/2015 07:48:26] "GET /map HTTP/1.1" 200 -
+DEBUG: 2015-09-27 07:48:32,829 "GET /v1/products?category=sedan&drop_lat=13.0217305556&pickup_lat=12.9501804&pickup_lng=77.6416884&drop_lng=77.6400527778 HTTP/1.1" 200 338
+INFO: 2015-09-27 07:48:32,831 127.0.0.1 - - [27/Sep/2015 07:48:32] "POST /products?category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 07:49:45,820 127.0.0.1 - - [27/Sep/2015 07:49:45] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 07:50:00,361 127.0.0.1 - - [27/Sep/2015 07:50:00] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 07:50:00,395 in save token, token : bc4da04f22af4bec8aa7069e3c99a31b
+INFO: 2015-09-27 07:50:00,395 after assigning to sesion, token :bc4da04f22af4bec8aa7069e3c99a31b
+INFO: 2015-09-27 07:50:00,396 127.0.0.1 - - [27/Sep/2015 07:50:00] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 07:50:12,965 Resetting dropped connection: sandbox-t.olacabs.com
+DEBUG: 2015-09-27 07:50:13,605 "GET /v1/products?category=sedan&drop_lat=13.0217305556&pickup_lat=12.9502514&pickup_lng=77.6417139&drop_lng=77.6400527778 HTTP/1.1" 200 338
+INFO: 2015-09-27 07:50:13,607 127.0.0.1 - - [27/Sep/2015 07:50:13] "POST /products?category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 07:50:15,808 127.0.0.1 - - [27/Sep/2015 07:50:15] "GET /is_logged_in HTTP/1.1" 200 -
+INFO: 2015-09-27 07:50:15,811 bc4da04f22af4bec8aa7069e3c99a31b
+DEBUG: 2015-09-27 07:50:17,887 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950251399999999&pickup_lng=77.6417139 HTTP/1.1" 200 160
+INFO: 2015-09-27 07:50:17,889 127.0.0.1 - - [27/Sep/2015 07:50:17] "GET /book?category=sedan&myLat=12.950251399999999&myLong=77.6417139 HTTP/1.1" 200 -
+DEBUG: 2015-09-27 07:50:25,483 "GET /v1/bookings/cancel?crn=1981 HTTP/1.1" 200 144
+INFO: 2015-09-27 07:50:25,485 127.0.0.1 - - [27/Sep/2015 07:50:25] "GET /cancel?crn=1981 HTTP/1.1" 200 -

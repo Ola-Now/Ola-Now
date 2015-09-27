@@ -1,14 +1,3 @@
 {
-  "name": "OLA API app",
-  "logo": "http://blogcdn.uber.com/wp-content/uploads/2011/12/New-Logo-Vertical-Dark.jpg",
-  "repository": "https://github.com/ola/Python-Sample-Application",
-  "keywords": ["ola", "python", "flask"],
-  "env": {
-    "OLA_CLIENT_ID": {
-      "description": "tuhFbqGLM7EGRRsVE8IzQUG3aRXz-7wP"
-    },
-    "OLA_CLIENT_SECRET": {
-      "description": "pPZoGBXt8SgTBGEQ_ABA0awC9ChHmQ-zEPmwoQRq"
-    }
-  }
+  "name": "OLA API app"
 }

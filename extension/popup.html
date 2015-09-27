@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="http://sumeshp.com/wp-content/themes/minimal-wp/font-awesome/css/font-awesome.min.css">
 <style>
     body { 
         min-width: 420px; 
@@ -8,21 +9,28 @@
         line-height: 20px;
         font-family: Arial, sans-serif; 
         font-size: 14px; 
+        background: #eee;
     }
     input, textarea { 
         width: 420px; 
     }
-    div#container {padding: 0 10px 20px; }
-    div#products { border-top: 1px solid #ddd; padding: 0 10px 15px;  }
+    .clear { clear:both; }
+    div#container {padding: 5px 20px; background: #fff; }
+    div#products { border-top: 1px solid #ddd; padding: 0 0 5px;  }
      div#products h3 {}
-    div.products_results0 {  }
-    div#products span { float:left; margin-right: 10px; background: #eee; border-radius: 10px; padding: 4px 8px; margin: 2px; }
+    div.products_results0 { border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    div#products span { float:left; margin-right: 10px; background: #f4f4f4; border-radius: 10px; padding: 4px 8px; margin: 2px; }
     div.book-now { float:left; }
-    div.book-now img {margin-left: 19px;}
-    div.book-details { width: 280px; float:right;}
+    div.book-now img {margin-left: 25px;}
+    div.book-details { width: 265px; float:right;}
     div.driver button, button.booking { font-weight: 700; background: #444; border: 0; border-radius: 10px; color: #fff; padding: 8px 12px; margin: 4px; }
-    div.driver { padding: 10px 15px;  }
-    div.driver-buttons {float:right; width: 150px;}
+    button.booking {background: green;}
+    div.driver {  padding: 10px 15px;  }
+    div.driver h3 { border-bottom: 1px solid #ccc; padding-bottom: 8px}
+    div.driver-buttons { float:right; width: 130px; text-align: right;}
+    div.driver button { width: 120px;}
+    button#cancel {background: #a30000;}
+    button#track {background: #0033cc;}
 
  </style>
 <script src="popup.js"></script>

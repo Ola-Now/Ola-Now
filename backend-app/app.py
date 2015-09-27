@@ -103,6 +103,19 @@ def cancel():
         params=params,
     )
     #TO_DO : Handle negative response
+    if session.get('access_token'):
+        new_dict = {session.get('access_token'): json.loads(response.text)}
+
+        with open("test.json") as json_file:
+            try:
+                data = json.load(json_file)
+            except ValueError:
+                data = {}
+        logging.info(data)
+        elem=data.pop(session.get('access_token'))
+
+        with open('test.json', 'w') as write_file:
+            json.dump(data, write_file)
     return response.text
 
 

@@ -947,3 +947,445 @@ DEBUG: 2015-09-27 10:20:27,941 "GET /v1/bookings/track_ride HTTP/1.1" 200 180
 INFO: 2015-09-27 10:20:27,944 127.0.0.1 - - [27/Sep/2015 10:20:27] "GET /track HTTP/1.1" 200 -
 INFO: 2015-09-27 10:25:56,761  * Detected change in 'app.py', reloading
 INFO: 2015-09-27 10:25:56,783  * Restarting with reloader
+INFO: 2015-09-27 10:31:54,695  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 10:31:54,712  * Restarting with reloader
+INFO: 2015-09-27 10:33:25,416 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 10:33:26,547 "GET /v1/products?category=sedan&pickup_lat=12.9505982&pickup_lng=77.6416736 HTTP/1.1" 200 294
+INFO: 2015-09-27 10:33:26,548 127.0.0.1 - - [27/Sep/2015 10:33:26] "POST /products?category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:39,265  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 10:35:39,309  * Restarting with reloader
+INFO: 2015-09-27 10:35:44,498 None
+INFO: 2015-09-27 10:35:44,963 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 10:35:45,644 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 10:35:45,646 127.0.0.1 - - [27/Sep/2015 10:35:45] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:55,499 127.0.0.1 - - [27/Sep/2015 10:35:55] "GET /access_token HTTP/1.1" 500 -
+INFO: 2015-09-27 10:35:55,564 127.0.0.1 - - [27/Sep/2015 10:35:55] "GET /access_token?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:55,567 127.0.0.1 - - [27/Sep/2015 10:35:55] "GET /access_token?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:55,569 127.0.0.1 - - [27/Sep/2015 10:35:55] "GET /access_token?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:55,616 127.0.0.1 - - [27/Sep/2015 10:35:55] "GET /access_token?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:55,681 127.0.0.1 - - [27/Sep/2015 10:35:55] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:55,693 127.0.0.1 - - [27/Sep/2015 10:35:55] "GET /access_token?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:55,789 127.0.0.1 - - [27/Sep/2015 10:35:55] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 10:35:59,038 127.0.0.1 - - [27/Sep/2015 10:35:59] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 10:36:14,011 127.0.0.1 - - [27/Sep/2015 10:36:14] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 10:36:14,044 in save token, token : b82db0424e374c88a7c40f338b038c23
+INFO: 2015-09-27 10:36:14,044 after assigning to sesion, token :b82db0424e374c88a7c40f338b038c23
+INFO: 2015-09-27 10:36:14,045 127.0.0.1 - - [27/Sep/2015 10:36:14] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 10:36:19,298 b82db0424e374c88a7c40f338b038c23
+DEBUG: 2015-09-27 10:36:20,740 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 159
+INFO: 2015-09-27 10:36:20,743 127.0.0.1 - - [27/Sep/2015 10:36:20] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 10:43:04,937  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 10:43:04,952  * Restarting with reloader
+INFO: 2015-09-27 10:54:04,217  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 10:54:04,293  * Restarting with reloader
+INFO: 2015-09-27 10:54:55,203 None
+INFO: 2015-09-27 10:54:55,267 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 10:54:56,351 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 10:54:56,362 127.0.0.1 - - [27/Sep/2015 10:54:56] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 500 -
+INFO: 2015-09-27 10:55:52,972 None
+DEBUG: 2015-09-27 10:55:53,796 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 10:55:53,808 127.0.0.1 - - [27/Sep/2015 10:55:53] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 500 -
+INFO: 2015-09-27 10:56:23,658  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 10:56:23,677  * Restarting with reloader
+INFO: 2015-09-27 10:56:33,288 None
+INFO: 2015-09-27 10:56:33,301 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 10:56:34,324 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 10:56:34,340 127.0.0.1 - - [27/Sep/2015 10:56:34] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 500 -
+INFO: 2015-09-27 11:06:21,424  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:06:21,449  * Restarting with reloader
+INFO: 2015-09-27 11:08:31,378  * Running on http://127.0.0.1:80/
+INFO: 2015-09-27 11:08:31,378  * Restarting with reloader
+INFO: 2015-09-27 11:08:38,497 127.0.0.1 - - [27/Sep/2015 11:08:38] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:08:52,041 127.0.0.1 - - [27/Sep/2015 11:08:52] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:08:52,075 in save token, token : a4358e032f8740ff8f76fac3d4bf6d9b
+INFO: 2015-09-27 11:08:52,075 after assigning to sesion, token :a4358e032f8740ff8f76fac3d4bf6d9b
+INFO: 2015-09-27 11:08:52,076 127.0.0.1 - - [27/Sep/2015 11:08:52] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:08:57,376 a4358e032f8740ff8f76fac3d4bf6d9b
+INFO: 2015-09-27 11:08:57,399 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:09:00,915 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:09:00,918 {}
+INFO: 2015-09-27 11:09:00,921 127.0.0.1 - - [27/Sep/2015 11:09:00] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:10:02,479 a4358e032f8740ff8f76fac3d4bf6d9b
+INFO: 2015-09-27 11:10:02,935 Resetting dropped connection: sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:10:05,613 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:10:05,615 {u'a4358e032f8740ff8f76fac3d4bf6d9b': u'{"crn":"2454","driver_name":"Phonenix D416","driver_number":"4567894416","cab_type":"sedan","cab_number":"KA 41  6","car_model":"Toyota Corolla","eta":2,"driver_lat":12.950074,"driver_lng":77.641727}'}
+INFO: 2015-09-27 11:10:05,616 127.0.0.1 - - [27/Sep/2015 11:10:05] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:10:19,690 a4358e032f8740ff8f76fac3d4bf6d9b
+DEBUG: 2015-09-27 11:10:21,813 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:10:21,814 {u'a4358e032f8740ff8f76fac3d4bf6d9b': u'{"crn":"2458","driver_name":"Phonenix D463","driver_number":"4567894463","cab_type":"sedan","cab_number":"KA 46  3","car_model":"Toyota Corolla","eta":2,"driver_lat":12.950074,"driver_lng":77.641727}'}
+INFO: 2015-09-27 11:10:21,816 127.0.0.1 - - [27/Sep/2015 11:10:21] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:12:11,497 127.0.0.1 - - [27/Sep/2015 11:12:11] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:12:22,825 127.0.0.1 - - [27/Sep/2015 11:12:22] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:12:22,864 in save token, token : 0cbc6a9d03224a3990f5cc1ed5f3f2f7
+INFO: 2015-09-27 11:12:22,865 after assigning to sesion, token :0cbc6a9d03224a3990f5cc1ed5f3f2f7
+INFO: 2015-09-27 11:12:22,865 127.0.0.1 - - [27/Sep/2015 11:12:22] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:12:27,707 0cbc6a9d03224a3990f5cc1ed5f3f2f7
+INFO: 2015-09-27 11:12:28,126 Resetting dropped connection: sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:12:29,891 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:12:29,893 {u'a4358e032f8740ff8f76fac3d4bf6d9b': u'{"crn":"2460","driver_name":"Phonenix D255","driver_number":"4567894255","cab_type":"sedan","cab_number":"KA 25  5","car_model":"Toyota Corolla","eta":2,"driver_lat":12.950074,"driver_lng":77.641727}'}
+INFO: 2015-09-27 11:12:29,898 127.0.0.1 - - [27/Sep/2015 11:12:29] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:14:06,985  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:14:07,011  * Restarting with reloader
+INFO: 2015-09-27 11:14:11,141 None
+INFO: 2015-09-27 11:14:11,566 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:14:12,381 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 11:14:12,382 {}
+INFO: 2015-09-27 11:14:12,383 127.0.0.1 - - [27/Sep/2015 11:14:12] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:14:24,000 127.0.0.1 - - [27/Sep/2015 11:14:24] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:14:38,988 127.0.0.1 - - [27/Sep/2015 11:14:38] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:14:39,025 in save token, token : 1e700c41190648f4aa3448881abe3c5f
+INFO: 2015-09-27 11:14:39,025 after assigning to sesion, token :1e700c41190648f4aa3448881abe3c5f
+INFO: 2015-09-27 11:14:39,026 127.0.0.1 - - [27/Sep/2015 11:14:39] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:14:43,722 1e700c41190648f4aa3448881abe3c5f
+DEBUG: 2015-09-27 11:14:46,064 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:14:46,065 {u'null': {u'message': u'Access token in not valid', u'code': u'invalid_access_token'}}
+INFO: 2015-09-27 11:14:46,069 127.0.0.1 - - [27/Sep/2015 11:14:46] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:16:03,561  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:16:03,586  * Restarting with reloader
+INFO: 2015-09-27 11:16:04,373 None
+INFO: 2015-09-27 11:16:04,852 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:16:05,505 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 401 69
+INFO: 2015-09-27 11:16:05,508 127.0.0.1 - - [27/Sep/2015 11:16:05] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:16:11,837 127.0.0.1 - - [27/Sep/2015 11:16:11] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:16:25,243 127.0.0.1 - - [27/Sep/2015 11:16:25] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:16:25,282 in save token, token : 31a58696d9224acc9690f82ff9e582a1
+INFO: 2015-09-27 11:16:25,282 after assigning to sesion, token :31a58696d9224acc9690f82ff9e582a1
+INFO: 2015-09-27 11:16:25,283 127.0.0.1 - - [27/Sep/2015 11:16:25] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:16:29,371 31a58696d9224acc9690f82ff9e582a1
+DEBUG: 2015-09-27 11:16:30,742 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:16:30,743 {}
+INFO: 2015-09-27 11:16:30,745 127.0.0.1 - - [27/Sep/2015 11:16:30] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:22:03,671  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:22:03,695  * Restarting with reloader
+INFO: 2015-09-27 11:24:13,040  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:24:13,053  * Restarting with reloader
+INFO: 2015-09-27 11:24:23,111 {u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}}
+INFO: 2015-09-27 11:24:23,119 127.0.0.1 - - [27/Sep/2015 11:24:23] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:24:23,190 127.0.0.1 - - [27/Sep/2015 11:24:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:24:23,196 127.0.0.1 - - [27/Sep/2015 11:24:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:24:23,204 127.0.0.1 - - [27/Sep/2015 11:24:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:24:23,261 127.0.0.1 - - [27/Sep/2015 11:24:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:24:23,325 127.0.0.1 - - [27/Sep/2015 11:24:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:24:23,332 127.0.0.1 - - [27/Sep/2015 11:24:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:24:23,554 127.0.0.1 - - [27/Sep/2015 11:24:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:09,859  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:25:09,876  * Restarting with reloader
+INFO: 2015-09-27 11:25:13,568 {u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}}
+INFO: 2015-09-27 11:25:13,569 127.0.0.1 - - [27/Sep/2015 11:25:13] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:20,147 127.0.0.1 - - [27/Sep/2015 11:25:20] "GET /access_token HTTP/1.1" 500 -
+INFO: 2015-09-27 11:25:20,242 127.0.0.1 - - [27/Sep/2015 11:25:20] "GET /access_token?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:20,244 127.0.0.1 - - [27/Sep/2015 11:25:20] "GET /access_token?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:20,246 127.0.0.1 - - [27/Sep/2015 11:25:20] "GET /access_token?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:20,340 127.0.0.1 - - [27/Sep/2015 11:25:20] "GET /access_token?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:20,394 127.0.0.1 - - [27/Sep/2015 11:25:20] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:20,396 127.0.0.1 - - [27/Sep/2015 11:25:20] "GET /access_token?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:40,936 127.0.0.1 - - [27/Sep/2015 11:25:40] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:25:52,752 127.0.0.1 - - [27/Sep/2015 11:25:52] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:52,787 in save token, token : 2e566b110716404096d61e3a1733d466
+INFO: 2015-09-27 11:25:52,787 after assigning to sesion, token :2e566b110716404096d61e3a1733d466
+INFO: 2015-09-27 11:25:52,788 127.0.0.1 - - [27/Sep/2015 11:25:52] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:25:55,304 127.0.0.1 - - [27/Sep/2015 11:25:55] "GET /access_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:26:04,371 {u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}}
+INFO: 2015-09-27 11:26:04,379 127.0.0.1 - - [27/Sep/2015 11:26:04] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:26:04,415 127.0.0.1 - - [27/Sep/2015 11:26:04] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:26:04,416 127.0.0.1 - - [27/Sep/2015 11:26:04] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:26:04,418 127.0.0.1 - - [27/Sep/2015 11:26:04] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:26:04,464 127.0.0.1 - - [27/Sep/2015 11:26:04] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:26:04,465 127.0.0.1 - - [27/Sep/2015 11:26:04] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:26:04,467 127.0.0.1 - - [27/Sep/2015 11:26:04] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:26:04,533 127.0.0.1 - - [27/Sep/2015 11:26:04] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:26:53,785 127.0.0.1 - - [27/Sep/2015 11:26:53] "GET /access_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:27:23,925 2e566b110716404096d61e3a1733d466
+INFO: 2015-09-27 11:27:24,311 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:27:27,545 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:27:27,546 {u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}}
+INFO: 2015-09-27 11:27:27,547 127.0.0.1 - - [27/Sep/2015 11:27:27] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:27:41,369 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'driver_lat': 12.950074, u'crn': u'2512', u'cab_number': u'KA 39  2'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'cab_number': u'KA 21  8', u'driver_lat': 12.950074, u'crn': u'2481'}}
+INFO: 2015-09-27 11:27:41,379 127.0.0.1 - - [27/Sep/2015 11:27:41] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:27:41,417 127.0.0.1 - - [27/Sep/2015 11:27:41] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:27:41,419 127.0.0.1 - - [27/Sep/2015 11:27:41] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:27:41,420 127.0.0.1 - - [27/Sep/2015 11:27:41] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:27:41,453 127.0.0.1 - - [27/Sep/2015 11:27:41] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:27:41,459 127.0.0.1 - - [27/Sep/2015 11:27:41] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:27:41,462 127.0.0.1 - - [27/Sep/2015 11:27:41] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:30:19,770 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'driver_lat': 12.950074, u'crn': u'2512', u'cab_number': u'KA 39  2'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'cab_number': u'KA 21  8', u'driver_lat': 12.950074, u'crn': u'2481'}}
+INFO: 2015-09-27 11:30:19,779 127.0.0.1 - - [27/Sep/2015 11:30:19] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:30:19,821 127.0.0.1 - - [27/Sep/2015 11:30:19] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:30:19,834 127.0.0.1 - - [27/Sep/2015 11:30:19] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:30:19,835 127.0.0.1 - - [27/Sep/2015 11:30:19] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:30:19,864 127.0.0.1 - - [27/Sep/2015 11:30:19] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:30:19,869 127.0.0.1 - - [27/Sep/2015 11:30:19] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:30:19,873 127.0.0.1 - - [27/Sep/2015 11:30:19] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:30:55,926  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:30:55,958  * Restarting with reloader
+INFO: 2015-09-27 11:31:00,070 127.0.0.1 - - [27/Sep/2015 11:31:00] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:09,736 127.0.0.1 - - [27/Sep/2015 11:31:09] "GET /access_token HTTP/1.1" 500 -
+INFO: 2015-09-27 11:31:09,828 127.0.0.1 - - [27/Sep/2015 11:31:09] "GET /access_token?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:09,831 127.0.0.1 - - [27/Sep/2015 11:31:09] "GET /access_token?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:09,834 127.0.0.1 - - [27/Sep/2015 11:31:09] "GET /access_token?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:09,902 127.0.0.1 - - [27/Sep/2015 11:31:09] "GET /access_token?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:09,940 127.0.0.1 - - [27/Sep/2015 11:31:09] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:09,941 127.0.0.1 - - [27/Sep/2015 11:31:09] "GET /access_token?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:09,975 127.0.0.1 - - [27/Sep/2015 11:31:09] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:15,240 127.0.0.1 - - [27/Sep/2015 11:31:15] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:31:27,427 127.0.0.1 - - [27/Sep/2015 11:31:27] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:27,465 in save token, token : 4974db13bc5a4c899e6be3944c950720
+INFO: 2015-09-27 11:31:27,466 after assigning to sesion, token :4974db13bc5a4c899e6be3944c950720
+INFO: 2015-09-27 11:31:27,467 127.0.0.1 - - [27/Sep/2015 11:31:27] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:30,292 127.0.0.1 - - [27/Sep/2015 11:31:30] "GET /access_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:35,333 127.0.0.1 - - [27/Sep/2015 11:31:35] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:31:35,373 127.0.0.1 - - [27/Sep/2015 11:31:35] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:35,376 127.0.0.1 - - [27/Sep/2015 11:31:35] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:35,378 127.0.0.1 - - [27/Sep/2015 11:31:35] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:35,417 127.0.0.1 - - [27/Sep/2015 11:31:35] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:35,427 127.0.0.1 - - [27/Sep/2015 11:31:35] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:35,428 127.0.0.1 - - [27/Sep/2015 11:31:35] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:31:35,503 127.0.0.1 - - [27/Sep/2015 11:31:35] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:21,699  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:33:21,731  * Restarting with reloader
+INFO: 2015-09-27 11:33:23,586 127.0.0.1 - - [27/Sep/2015 11:33:23] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:27,656 127.0.0.1 - - [27/Sep/2015 11:33:27] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:33:48,333  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:33:48,346  * Restarting with reloader
+INFO: 2015-09-27 11:33:49,912 127.0.0.1 - - [27/Sep/2015 11:33:49] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:49,955 in save token, token : ecd09d3399b04ad9a99c2f23d26e80c5
+INFO: 2015-09-27 11:33:49,955 after assigning to sesion, token :ecd09d3399b04ad9a99c2f23d26e80c5
+INFO: 2015-09-27 11:33:49,956 127.0.0.1 - - [27/Sep/2015 11:33:49] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:53,083 ecd09d3399b04ad9a99c2f23d26e80c5
+INFO: 2015-09-27 11:33:53,143 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:33:55,884 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:33:55,885 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'driver_lat': 12.950074, u'crn': u'2512', u'cab_number': u'KA 39  2'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'cab_number': u'KA 21  8', u'driver_lat': 12.950074, u'crn': u'2481'}}
+INFO: 2015-09-27 11:33:55,886 127.0.0.1 - - [27/Sep/2015 11:33:55] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:59,611 127.0.0.1 - - [27/Sep/2015 11:33:59] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:33:59,659 127.0.0.1 - - [27/Sep/2015 11:33:59] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:59,660 127.0.0.1 - - [27/Sep/2015 11:33:59] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:59,662 127.0.0.1 - - [27/Sep/2015 11:33:59] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:59,695 127.0.0.1 - - [27/Sep/2015 11:33:59] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:59,701 127.0.0.1 - - [27/Sep/2015 11:33:59] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:59,704 127.0.0.1 - - [27/Sep/2015 11:33:59] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:33:59,833 127.0.0.1 - - [27/Sep/2015 11:33:59] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:34:35,836  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:34:35,858  * Restarting with reloader
+INFO: 2015-09-27 11:34:38,772 127.0.0.1 - - [27/Sep/2015 11:34:38] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:34:43,546 127.0.0.1 - - [27/Sep/2015 11:34:43] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:34:53,441 127.0.0.1 - - [27/Sep/2015 11:34:53] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:34:53,474 in save token, token : 93bb9fc61fc44dfa86507b5f7b674880
+INFO: 2015-09-27 11:34:53,474 after assigning to sesion, token :93bb9fc61fc44dfa86507b5f7b674880
+INFO: 2015-09-27 11:34:53,475 127.0.0.1 - - [27/Sep/2015 11:34:53] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:34:55,047 93bb9fc61fc44dfa86507b5f7b674880
+INFO: 2015-09-27 11:34:55,512 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:34:58,238 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:34:58,239 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'cab_number': u'KA 39  2', u'driver_lat': 12.950074, u'crn': u'2512'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'driver_lat': 12.950074, u'crn': u'2539', u'cab_number': u'KA 29  0'}}
+INFO: 2015-09-27 11:34:58,241 127.0.0.1 - - [27/Sep/2015 11:34:58] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:01,015 127.0.0.1 - - [27/Sep/2015 11:35:01] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:35:01,090 127.0.0.1 - - [27/Sep/2015 11:35:01] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:01,091 127.0.0.1 - - [27/Sep/2015 11:35:01] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:01,092 127.0.0.1 - - [27/Sep/2015 11:35:01] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:01,131 127.0.0.1 - - [27/Sep/2015 11:35:01] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:01,137 127.0.0.1 - - [27/Sep/2015 11:35:01] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:01,140 127.0.0.1 - - [27/Sep/2015 11:35:01] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:01,181 127.0.0.1 - - [27/Sep/2015 11:35:01] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:27,682  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:35:27,702  * Restarting with reloader
+INFO: 2015-09-27 11:35:32,257 127.0.0.1 - - [27/Sep/2015 11:35:32] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:35:32,293 127.0.0.1 - - [27/Sep/2015 11:35:32] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:32,294 127.0.0.1 - - [27/Sep/2015 11:35:32] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:32,296 127.0.0.1 - - [27/Sep/2015 11:35:32] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:32,359 127.0.0.1 - - [27/Sep/2015 11:35:32] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:32,377 127.0.0.1 - - [27/Sep/2015 11:35:32] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:32,384 127.0.0.1 - - [27/Sep/2015 11:35:32] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:49,077  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:35:49,096  * Restarting with reloader
+INFO: 2015-09-27 11:35:50,529 127.0.0.1 - - [27/Sep/2015 11:35:50] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:35:50,603 127.0.0.1 - - [27/Sep/2015 11:35:50] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:50,604 127.0.0.1 - - [27/Sep/2015 11:35:50] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:50,606 127.0.0.1 - - [27/Sep/2015 11:35:50] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:50,632 127.0.0.1 - - [27/Sep/2015 11:35:50] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:50,637 127.0.0.1 - - [27/Sep/2015 11:35:50] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:50,640 127.0.0.1 - - [27/Sep/2015 11:35:50] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:52,521 127.0.0.1 - - [27/Sep/2015 11:35:52] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:35:52,557 127.0.0.1 - - [27/Sep/2015 11:35:52] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:52,562 127.0.0.1 - - [27/Sep/2015 11:35:52] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:52,564 127.0.0.1 - - [27/Sep/2015 11:35:52] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:52,610 127.0.0.1 - - [27/Sep/2015 11:35:52] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:52,616 127.0.0.1 - - [27/Sep/2015 11:35:52] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:52,619 127.0.0.1 - - [27/Sep/2015 11:35:52] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:35:59,388  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:35:59,440  * Restarting with reloader
+INFO: 2015-09-27 11:36:00,750 127.0.0.1 - - [27/Sep/2015 11:36:00] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:36:04,955 127.0.0.1 - - [27/Sep/2015 11:36:04] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:36:16,711 127.0.0.1 - - [27/Sep/2015 11:36:16] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:36:16,758 in save token, token : a74d646b57d74af78e8edd7ad8a2f683
+INFO: 2015-09-27 11:36:16,758 after assigning to sesion, token :a74d646b57d74af78e8edd7ad8a2f683
+INFO: 2015-09-27 11:36:16,759 127.0.0.1 - - [27/Sep/2015 11:36:16] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:36:21,778 a74d646b57d74af78e8edd7ad8a2f683
+INFO: 2015-09-27 11:36:22,130 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:36:26,705 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:36:26,706 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'driver_lat': 12.950074, u'crn': u'2512', u'cab_number': u'KA 39  2'}, u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'driver_lat': 12.950074, u'crn': u'2547', u'cab_number': u'KA 14  9'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'cab_number': u'KA 21  8', u'driver_lat': 12.950074, u'crn': u'2481'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'cab_number': u'KA 29  0', u'driver_lat': 12.950074, u'crn': u'2539'}}
+INFO: 2015-09-27 11:36:26,709 127.0.0.1 - - [27/Sep/2015 11:36:26] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:36:28,655 127.0.0.1 - - [27/Sep/2015 11:36:28] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:36:30,398 127.0.0.1 - - [27/Sep/2015 11:36:30] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:36:41,546 127.0.0.1 - - [27/Sep/2015 11:36:41] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:36:59,187  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:36:59,211  * Restarting with reloader
+INFO: 2015-09-27 11:37:03,920 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'cab_number': u'KA 39  2', u'driver_lat': 12.950074, u'crn': u'2512'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'driver_lat': 12.950074, u'crn': u'2539', u'cab_number': u'KA 29  0'}, u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'cab_number': u'KA 14  9', u'driver_lat': 12.950074, u'crn': u'2547'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'driver_lat': 12.950074, u'crn': u'2571', u'cab_number': u'KA 28  6'}}
+INFO: 2015-09-27 11:37:03,921 127.0.0.1 - - [27/Sep/2015 11:37:03] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:37:31,754  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:37:31,769  * Restarting with reloader
+INFO: 2015-09-27 11:37:33,287 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'cab_number': u'KA 39  2', u'driver_lat': 12.950074, u'crn': u'2512'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'driver_lat': 12.950074, u'crn': u'2539', u'cab_number': u'KA 29  0'}, u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'cab_number': u'KA 14  9', u'driver_lat': 12.950074, u'crn': u'2547'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'driver_lat': 12.950074, u'crn': u'2571', u'cab_number': u'KA 28  6'}}
+INFO: 2015-09-27 11:37:33,299 127.0.0.1 - - [27/Sep/2015 11:37:33] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:37:33,349 127.0.0.1 - - [27/Sep/2015 11:37:33] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:37:33,356 127.0.0.1 - - [27/Sep/2015 11:37:33] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:37:33,359 127.0.0.1 - - [27/Sep/2015 11:37:33] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:37:33,389 127.0.0.1 - - [27/Sep/2015 11:37:33] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:37:33,395 127.0.0.1 - - [27/Sep/2015 11:37:33] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:37:33,398 127.0.0.1 - - [27/Sep/2015 11:37:33] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:37:33,489 127.0.0.1 - - [27/Sep/2015 11:37:33] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:37:57,365  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:37:57,388  * Restarting with reloader
+INFO: 2015-09-27 11:37:58,797 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'cab_number': u'KA 39  2', u'driver_lat': 12.950074, u'crn': u'2512'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'driver_lat': 12.950074, u'crn': u'2539', u'cab_number': u'KA 29  0'}, u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'cab_number': u'KA 14  9', u'driver_lat': 12.950074, u'crn': u'2547'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'driver_lat': 12.950074, u'crn': u'2571', u'cab_number': u'KA 28  6'}}
+INFO: 2015-09-27 11:37:58,798 127.0.0.1 - - [27/Sep/2015 11:37:58] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:02,666 127.0.0.1 - - [27/Sep/2015 11:38:02] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:38:15,679 127.0.0.1 - - [27/Sep/2015 11:38:15] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:15,731 in save token, token : 9c0b58f3c7544a88b8d4629f430d2f43
+INFO: 2015-09-27 11:38:15,731 after assigning to sesion, token :9c0b58f3c7544a88b8d4629f430d2f43
+INFO: 2015-09-27 11:38:15,732 127.0.0.1 - - [27/Sep/2015 11:38:15] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:16,818 9c0b58f3c7544a88b8d4629f430d2f43
+INFO: 2015-09-27 11:38:17,283 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:38:20,554 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 159
+INFO: 2015-09-27 11:38:20,555 {u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'cab_number': u'KA 39  2', u'driver_lat': 12.950074, u'crn': u'2512'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'driver_lat': 12.950074, u'crn': u'2539', u'cab_number': u'KA 29  0'}, u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'cab_number': u'KA 14  9', u'driver_lat': 12.950074, u'crn': u'2547'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'driver_lat': 12.950074, u'crn': u'2571', u'cab_number': u'KA 28  6'}}
+INFO: 2015-09-27 11:38:20,557 127.0.0.1 - - [27/Sep/2015 11:38:20] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:23,173 {u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'driver_lat': 12.950074, u'crn': u'2547', u'cab_number': u'KA 14  9'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'cab_number': u'KA 28  6', u'driver_lat': 12.950074, u'crn': u'2571'}, u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'driver_lat': 12.950074, u'crn': u'2512', u'cab_number': u'KA 39  2'}, u'9c0b58f3c7544a88b8d4629f430d2f43': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894178', u'cab_type': u'sedan', u'driver_name': u'Phonenix D178', u'driver_lat': 12.950074, u'crn': u'2588', u'cab_number': u'KA 17  8'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'cab_number': u'KA 21  8', u'driver_lat': 12.950074, u'crn': u'2481'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'cab_number': u'KA 29  0', u'driver_lat': 12.950074, u'crn': u'2539'}}
+INFO: 2015-09-27 11:38:23,182 127.0.0.1 - - [27/Sep/2015 11:38:23] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:38:23,260 127.0.0.1 - - [27/Sep/2015 11:38:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:23,261 127.0.0.1 - - [27/Sep/2015 11:38:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:23,262 127.0.0.1 - - [27/Sep/2015 11:38:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:23,290 127.0.0.1 - - [27/Sep/2015 11:38:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:23,296 127.0.0.1 - - [27/Sep/2015 11:38:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:23,299 127.0.0.1 - - [27/Sep/2015 11:38:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:38:23,379 127.0.0.1 - - [27/Sep/2015 11:38:23] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:39:37,621  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:39:37,665  * Restarting with reloader
+INFO: 2015-09-27 11:39:46,429 {"93bb9fc61fc44dfa86507b5f7b674880": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894149", "cab_type": "sedan", "driver_name": "Phonenix D149", "driver_lat": 12.950074, "crn": "2547", "cab_number": "KA 14  9"}, "a74d646b57d74af78e8edd7ad8a2f683": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894286", "cab_type": "sedan", "driver_name": "Phonenix D286", "cab_number": "KA 28  6", "driver_lat": 12.950074, "crn": "2571"}, "2e566b110716404096d61e3a1733d466": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894392", "cab_type": "sedan", "driver_name": "Phonenix D392", "driver_lat": 12.950074, "crn": "2512", "cab_number": "KA 39  2"}, "9c0b58f3c7544a88b8d4629f430d2f43": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894178", "cab_type": "sedan", "driver_name": "Phonenix D178", "driver_lat": 12.950074, "crn": "2588", "cab_number": "KA 17  8"}, "31a58696d9224acc9690f82ff9e582a1": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894218", "cab_type": "sedan", "driver_name": "Phonenix D218", "cab_number": "KA 21  8", "driver_lat": 12.950074, "crn": "2481"}, "ecd09d3399b04ad9a99c2f23d26e80c5": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894290", "cab_type": "sedan", "driver_name": "Phonenix D290", "cab_number": "KA 29  0", "driver_lat": 12.950074, "crn": "2539"}}
+INFO: 2015-09-27 11:39:46,430 127.0.0.1 - - [27/Sep/2015 11:39:46] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:39:53,707 127.0.0.1 - - [27/Sep/2015 11:39:53] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:40:05,468 127.0.0.1 - - [27/Sep/2015 11:40:05] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:40:05,498 in save token, token : fe031985b72e42d3a6ba1c554d4b99e7
+INFO: 2015-09-27 11:40:05,499 after assigning to sesion, token :fe031985b72e42d3a6ba1c554d4b99e7
+INFO: 2015-09-27 11:40:05,500 127.0.0.1 - - [27/Sep/2015 11:40:05] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:40:06,762 fe031985b72e42d3a6ba1c554d4b99e7
+INFO: 2015-09-27 11:40:07,113 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:40:09,493 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 143
+INFO: 2015-09-27 11:40:09,495 {u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'driver_lat': 12.950074, u'crn': u'2547', u'cab_number': u'KA 14  9'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'cab_number': u'KA 28  6', u'driver_lat': 12.950074, u'crn': u'2571'}, u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'driver_lat': 12.950074, u'crn': u'2512', u'cab_number': u'KA 39  2'}, u'9c0b58f3c7544a88b8d4629f430d2f43': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894178', u'cab_type': u'sedan', u'driver_name': u'Phonenix D178', u'driver_lat': 12.950074, u'crn': u'2588', u'cab_number': u'KA 17  8'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'cab_number': u'KA 21  8', u'driver_lat': 12.950074, u'crn': u'2481'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'cab_number': u'KA 29  0', u'driver_lat': 12.950074, u'crn': u'2539'}}
+INFO: 2015-09-27 11:40:09,497 127.0.0.1 - - [27/Sep/2015 11:40:09] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:40:18,334 {"93bb9fc61fc44dfa86507b5f7b674880": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894149", "cab_type": "sedan", "driver_name": "Phonenix D149", "cab_number": "KA 14  9", "driver_lat": 12.950074, "crn": "2547"}, "a74d646b57d74af78e8edd7ad8a2f683": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894286", "cab_type": "sedan", "driver_name": "Phonenix D286", "driver_lat": 12.950074, "crn": "2571", "cab_number": "KA 28  6"}, "2e566b110716404096d61e3a1733d466": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894392", "cab_type": "sedan", "driver_name": "Phonenix D392", "cab_number": "KA 39  2", "driver_lat": 12.950074, "crn": "2512"}, "9c0b58f3c7544a88b8d4629f430d2f43": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894178", "cab_type": "sedan", "driver_name": "Phonenix D178", "cab_number": "KA 17  8", "driver_lat": 12.950074, "crn": "2588"}, "fe031985b72e42d3a6ba1c554d4b99e7": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "", "cab_type": "sedan", "driver_name": "", "driver_lat": 12.950074, "crn": "2596", "cab_number": "KA 49  8"}, "31a58696d9224acc9690f82ff9e582a1": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894218", "cab_type": "sedan", "driver_name": "Phonenix D218", "driver_lat": 12.950074, "crn": "2481", "cab_number": "KA 21  8"}, "ecd09d3399b04ad9a99c2f23d26e80c5": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894290", "cab_type": "sedan", "driver_name": "Phonenix D290", "driver_lat": 12.950074, "crn": "2539", "cab_number": "KA 29  0"}}
+INFO: 2015-09-27 11:40:18,335 127.0.0.1 - - [27/Sep/2015 11:40:18] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:41:51,875  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:41:51,889  * Restarting with reloader
+INFO: 2015-09-27 11:41:54,534 127.0.0.1 - - [27/Sep/2015 11:41:54] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:41:54,573 127.0.0.1 - - [27/Sep/2015 11:41:54] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:41:54,576 127.0.0.1 - - [27/Sep/2015 11:41:54] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:41:54,578 127.0.0.1 - - [27/Sep/2015 11:41:54] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:41:54,615 127.0.0.1 - - [27/Sep/2015 11:41:54] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:41:54,621 127.0.0.1 - - [27/Sep/2015 11:41:54] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:41:54,624 127.0.0.1 - - [27/Sep/2015 11:41:54] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:41:54,698 127.0.0.1 - - [27/Sep/2015 11:41:54] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:43:55,031  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:43:55,053  * Restarting with reloader
+INFO: 2015-09-27 11:45:56,687 {"93bb9fc61fc44dfa86507b5f7b674880": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894149", "cab_type": "sedan", "driver_name": "Phonenix D149", "cab_number": "KA 14  9", "driver_lat": 12.950074, "crn": "2547"}, "a74d646b57d74af78e8edd7ad8a2f683": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894286", "cab_type": "sedan", "driver_name": "Phonenix D286", "driver_lat": 12.950074, "crn": "2571", "cab_number": "KA 28  6"}, "2e566b110716404096d61e3a1733d466": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894392", "cab_type": "sedan", "driver_name": "Phonenix D392", "cab_number": "KA 39  2", "driver_lat": 12.950074, "crn": "2512"}, "9c0b58f3c7544a88b8d4629f430d2f43": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894178", "cab_type": "sedan", "driver_name": "Phonenix D178", "cab_number": "KA 17  8", "driver_lat": 12.950074, "crn": "2588"}, "fe031985b72e42d3a6ba1c554d4b99e7": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "", "cab_type": "sedan", "driver_name": "", "driver_lat": 12.950074, "crn": "2596", "cab_number": "KA 49  8"}, "31a58696d9224acc9690f82ff9e582a1": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894218", "cab_type": "sedan", "driver_name": "Phonenix D218", "driver_lat": 12.950074, "crn": "2481", "cab_number": "KA 21  8"}, "ecd09d3399b04ad9a99c2f23d26e80c5": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894290", "cab_type": "sedan", "driver_name": "Phonenix D290", "driver_lat": 12.950074, "crn": "2539", "cab_number": "KA 29  0"}}
+INFO: 2015-09-27 11:45:56,688 127.0.0.1 - - [27/Sep/2015 11:45:56] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:46:02,488 127.0.0.1 - - [27/Sep/2015 11:46:02] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:46:14,245 127.0.0.1 - - [27/Sep/2015 11:46:14] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:46:14,279 in save token, token : 2356328b06fc485da6d7105a95eb5e20
+INFO: 2015-09-27 11:46:14,280 after assigning to sesion, token :2356328b06fc485da6d7105a95eb5e20
+INFO: 2015-09-27 11:46:14,281 127.0.0.1 - - [27/Sep/2015 11:46:14] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:46:15,583 2356328b06fc485da6d7105a95eb5e20
+INFO: 2015-09-27 11:46:16,012 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:46:18,089 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 158
+INFO: 2015-09-27 11:46:18,090 {u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'cab_number': u'KA 14  9', u'driver_lat': 12.950074, u'crn': u'2547'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'driver_lat': 12.950074, u'crn': u'2571', u'cab_number': u'KA 28  6'}, u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'cab_number': u'KA 39  2', u'driver_lat': 12.950074, u'crn': u'2512'}, u'9c0b58f3c7544a88b8d4629f430d2f43': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894178', u'cab_type': u'sedan', u'driver_name': u'Phonenix D178', u'cab_number': u'KA 17  8', u'driver_lat': 12.950074, u'crn': u'2588'}, u'fe031985b72e42d3a6ba1c554d4b99e7': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'', u'cab_type': u'sedan', u'driver_name': u'', u'driver_lat': 12.950074, u'crn': u'2596', u'cab_number': u'KA 49  8'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'driver_lat': 12.950074, u'crn': u'2539', u'cab_number': u'KA 29  0'}}
+INFO: 2015-09-27 11:46:18,093 127.0.0.1 - - [27/Sep/2015 11:46:18] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:46:20,807 {"93bb9fc61fc44dfa86507b5f7b674880": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894149", "cab_type": "sedan", "driver_name": "Phonenix D149", "driver_lat": 12.950074, "crn": "2547", "cab_number": "KA 14  9"}, "a74d646b57d74af78e8edd7ad8a2f683": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894286", "cab_type": "sedan", "driver_name": "Phonenix D286", "cab_number": "KA 28  6", "driver_lat": 12.950074, "crn": "2571"}, "2356328b06fc485da6d7105a95eb5e20": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894229", "cab_type": "sedan", "driver_name": "Phonenix D229", "driver_lat": 12.950074, "crn": "2629", "cab_number": "KA 22  9"}, "2e566b110716404096d61e3a1733d466": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894392", "cab_type": "sedan", "driver_name": "Phonenix D392", "driver_lat": 12.950074, "crn": "2512", "cab_number": "KA 39  2"}, "9c0b58f3c7544a88b8d4629f430d2f43": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894178", "cab_type": "sedan", "driver_name": "Phonenix D178", "driver_lat": 12.950074, "crn": "2588", "cab_number": "KA 17  8"}, "fe031985b72e42d3a6ba1c554d4b99e7": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "", "cab_type": "sedan", "driver_name": "", "cab_number": "KA 49  8", "driver_lat": 12.950074, "crn": "2596"}, "31a58696d9224acc9690f82ff9e582a1": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894218", "cab_type": "sedan", "driver_name": "Phonenix D218", "cab_number": "KA 21  8", "driver_lat": 12.950074, "crn": "2481"}, "ecd09d3399b04ad9a99c2f23d26e80c5": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894290", "cab_type": "sedan", "driver_name": "Phonenix D290", "cab_number": "KA 29  0", "driver_lat": 12.950074, "crn": "2539"}}
+INFO: 2015-09-27 11:46:20,808 127.0.0.1 - - [27/Sep/2015 11:46:20] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:46:26,439 {"93bb9fc61fc44dfa86507b5f7b674880": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894149", "cab_type": "sedan", "driver_name": "Phonenix D149", "driver_lat": 12.950074, "crn": "2547", "cab_number": "KA 14  9"}, "a74d646b57d74af78e8edd7ad8a2f683": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894286", "cab_type": "sedan", "driver_name": "Phonenix D286", "cab_number": "KA 28  6", "driver_lat": 12.950074, "crn": "2571"}, "2356328b06fc485da6d7105a95eb5e20": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894229", "cab_type": "sedan", "driver_name": "Phonenix D229", "driver_lat": 12.950074, "crn": "2629", "cab_number": "KA 22  9"}, "2e566b110716404096d61e3a1733d466": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894392", "cab_type": "sedan", "driver_name": "Phonenix D392", "driver_lat": 12.950074, "crn": "2512", "cab_number": "KA 39  2"}, "9c0b58f3c7544a88b8d4629f430d2f43": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894178", "cab_type": "sedan", "driver_name": "Phonenix D178", "driver_lat": 12.950074, "crn": "2588", "cab_number": "KA 17  8"}, "fe031985b72e42d3a6ba1c554d4b99e7": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "", "cab_type": "sedan", "driver_name": "", "cab_number": "KA 49  8", "driver_lat": 12.950074, "crn": "2596"}, "31a58696d9224acc9690f82ff9e582a1": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894218", "cab_type": "sedan", "driver_name": "Phonenix D218", "cab_number": "KA 21  8", "driver_lat": 12.950074, "crn": "2481"}, "ecd09d3399b04ad9a99c2f23d26e80c5": {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894290", "cab_type": "sedan", "driver_name": "Phonenix D290", "cab_number": "KA 29  0", "driver_lat": 12.950074, "crn": "2539"}}
+INFO: 2015-09-27 11:46:26,440 127.0.0.1 - - [27/Sep/2015 11:46:26] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:09,841  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:47:09,860  * Restarting with reloader
+INFO: 2015-09-27 11:47:14,138 127.0.0.1 - - [27/Sep/2015 11:47:14] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:47:14,219 127.0.0.1 - - [27/Sep/2015 11:47:14] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:14,221 127.0.0.1 - - [27/Sep/2015 11:47:14] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:14,224 127.0.0.1 - - [27/Sep/2015 11:47:14] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:14,283 127.0.0.1 - - [27/Sep/2015 11:47:14] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:14,292 127.0.0.1 - - [27/Sep/2015 11:47:14] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:14,296 127.0.0.1 - - [27/Sep/2015 11:47:14] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:14,421 127.0.0.1 - - [27/Sep/2015 11:47:14] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:36,367  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:47:36,385  * Restarting with reloader
+INFO: 2015-09-27 11:47:37,688 127.0.0.1 - - [27/Sep/2015 11:47:37] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:47:37,757 127.0.0.1 - - [27/Sep/2015 11:47:37] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:37,759 127.0.0.1 - - [27/Sep/2015 11:47:37] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:37,760 127.0.0.1 - - [27/Sep/2015 11:47:37] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:37,822 127.0.0.1 - - [27/Sep/2015 11:47:37] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:37,823 127.0.0.1 - - [27/Sep/2015 11:47:37] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:47:37,824 127.0.0.1 - - [27/Sep/2015 11:47:37] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:07,994  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:48:08,010  * Restarting with reloader
+INFO: 2015-09-27 11:48:10,879 127.0.0.1 - - [27/Sep/2015 11:48:10] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:48:10,949 127.0.0.1 - - [27/Sep/2015 11:48:10] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:10,952 127.0.0.1 - - [27/Sep/2015 11:48:10] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:10,973 127.0.0.1 - - [27/Sep/2015 11:48:10] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:11,017 127.0.0.1 - - [27/Sep/2015 11:48:11] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:11,026 127.0.0.1 - - [27/Sep/2015 11:48:11] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:11,029 127.0.0.1 - - [27/Sep/2015 11:48:11] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:32,580 127.0.0.1 - - [27/Sep/2015 11:48:32] "GET /access_token HTTP/1.1" 500 -
+INFO: 2015-09-27 11:48:32,613 127.0.0.1 - - [27/Sep/2015 11:48:32] "GET /access_token?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:32,615 127.0.0.1 - - [27/Sep/2015 11:48:32] "GET /access_token?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:32,624 127.0.0.1 - - [27/Sep/2015 11:48:32] "GET /access_token?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:32,662 127.0.0.1 - - [27/Sep/2015 11:48:32] "GET /access_token?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:32,670 127.0.0.1 - - [27/Sep/2015 11:48:32] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:32,672 127.0.0.1 - - [27/Sep/2015 11:48:32] "GET /access_token?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:32,793 127.0.0.1 - - [27/Sep/2015 11:48:32] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:34,973 127.0.0.1 - - [27/Sep/2015 11:48:34] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:48:48,523 127.0.0.1 - - [27/Sep/2015 11:48:48] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:48,590 in save token, token : d41689b4e9c14c198e325c7f0654fc35
+INFO: 2015-09-27 11:48:48,590 after assigning to sesion, token :d41689b4e9c14c198e325c7f0654fc35
+INFO: 2015-09-27 11:48:48,591 127.0.0.1 - - [27/Sep/2015 11:48:48] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:49,869 d41689b4e9c14c198e325c7f0654fc35
+INFO: 2015-09-27 11:48:50,295 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:48:54,865 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 161
+INFO: 2015-09-27 11:48:54,867 {u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'driver_lat': 12.950074, u'crn': u'2547', u'cab_number': u'KA 14  9'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'cab_number': u'KA 28  6', u'driver_lat': 12.950074, u'crn': u'2571'}, u'2356328b06fc485da6d7105a95eb5e20': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894229', u'cab_type': u'sedan', u'driver_name': u'Phonenix D229', u'driver_lat': 12.950074, u'crn': u'2629', u'cab_number': u'KA 22  9'}, u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'driver_lat': 12.950074, u'crn': u'2512', u'cab_number': u'KA 39  2'}, u'9c0b58f3c7544a88b8d4629f430d2f43': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894178', u'cab_type': u'sedan', u'driver_name': u'Phonenix D178', u'driver_lat': 12.950074, u'crn': u'2588', u'cab_number': u'KA 17  8'}, u'fe031985b72e42d3a6ba1c554d4b99e7': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'', u'cab_type': u'sedan', u'driver_name': u'', u'cab_number': u'KA 49  8', u'driver_lat': 12.950074, u'crn': u'2596'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'cab_number': u'KA 21  8', u'driver_lat': 12.950074, u'crn': u'2481'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'cab_number': u'KA 29  0', u'driver_lat': 12.950074, u'crn': u'2539'}}
+INFO: 2015-09-27 11:48:54,869 127.0.0.1 - - [27/Sep/2015 11:48:54] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:48:54,871 {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894139", "cab_type": "sedan", "driver_name": "Phonenix D139", "driver_lat": 12.950074, "crn": "2638", "cab_number": "KA 13  9"}
+INFO: 2015-09-27 11:48:54,872 127.0.0.1 - - [27/Sep/2015 11:48:54] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:32,784  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:49:32,799  * Restarting with reloader
+INFO: 2015-09-27 11:49:34,484 127.0.0.1 - - [27/Sep/2015 11:49:34] "GET /get_ride_info HTTP/1.1" 500 -
+INFO: 2015-09-27 11:49:34,548 127.0.0.1 - - [27/Sep/2015 11:49:34] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:34,550 127.0.0.1 - - [27/Sep/2015 11:49:34] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:34,552 127.0.0.1 - - [27/Sep/2015 11:49:34] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:34,582 127.0.0.1 - - [27/Sep/2015 11:49:34] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:34,586 127.0.0.1 - - [27/Sep/2015 11:49:34] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:34,590 127.0.0.1 - - [27/Sep/2015 11:49:34] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:34,678 127.0.0.1 - - [27/Sep/2015 11:49:34] "GET /get_ride_info?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:41,026 127.0.0.1 - - [27/Sep/2015 11:49:41] "GET /access_token HTTP/1.1" 500 -
+INFO: 2015-09-27 11:49:41,093 127.0.0.1 - - [27/Sep/2015 11:49:41] "GET /access_token?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:41,094 127.0.0.1 - - [27/Sep/2015 11:49:41] "GET /access_token?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:41,095 127.0.0.1 - - [27/Sep/2015 11:49:41] "GET /access_token?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:41,164 127.0.0.1 - - [27/Sep/2015 11:49:41] "GET /access_token?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:41,207 127.0.0.1 - - [27/Sep/2015 11:49:41] "GET /access_token?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:41,208 127.0.0.1 - - [27/Sep/2015 11:49:41] "GET /access_token?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:44,979 127.0.0.1 - - [27/Sep/2015 11:49:44] "GET / HTTP/1.1" 302 -
+INFO: 2015-09-27 11:49:59,118 127.0.0.1 - - [27/Sep/2015 11:49:59] "GET /team56 HTTP/1.1" 200 -
+INFO: 2015-09-27 11:49:59,154 in save token, token : 06ea589d2e3246c3ae2c689855dce34f
+INFO: 2015-09-27 11:49:59,154 after assigning to sesion, token :06ea589d2e3246c3ae2c689855dce34f
+INFO: 2015-09-27 11:49:59,155 127.0.0.1 - - [27/Sep/2015 11:49:59] "POST /save_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:50:02,934 06ea589d2e3246c3ae2c689855dce34f
+INFO: 2015-09-27 11:50:03,346 Starting new HTTP connection (1): sandbox-t.olacabs.com
+DEBUG: 2015-09-27 11:50:05,786 "GET /v1/bookings/create?category=sedan&pickup_mode=NOW&pickup_lat=12.950072&pickup_lng=77.642684 HTTP/1.1" 200 160
+INFO: 2015-09-27 11:50:05,787 {u'93bb9fc61fc44dfa86507b5f7b674880': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894149', u'cab_type': u'sedan', u'driver_name': u'Phonenix D149', u'cab_number': u'KA 14  9', u'driver_lat': 12.950074, u'crn': u'2547'}, u'a74d646b57d74af78e8edd7ad8a2f683': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894286', u'cab_type': u'sedan', u'driver_name': u'Phonenix D286', u'driver_lat': 12.950074, u'crn': u'2571', u'cab_number': u'KA 28  6'}, u'2356328b06fc485da6d7105a95eb5e20': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894229', u'cab_type': u'sedan', u'driver_name': u'Phonenix D229', u'cab_number': u'KA 22  9', u'driver_lat': 12.950074, u'crn': u'2629'}, u'2e566b110716404096d61e3a1733d466': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894392', u'cab_type': u'sedan', u'driver_name': u'Phonenix D392', u'cab_number': u'KA 39  2', u'driver_lat': 12.950074, u'crn': u'2512'}, u'9c0b58f3c7544a88b8d4629f430d2f43': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894178', u'cab_type': u'sedan', u'driver_name': u'Phonenix D178', u'cab_number': u'KA 17  8', u'driver_lat': 12.950074, u'crn': u'2588'}, u'fe031985b72e42d3a6ba1c554d4b99e7': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'', u'cab_type': u'sedan', u'driver_name': u'', u'driver_lat': 12.950074, u'crn': u'2596', u'cab_number': u'KA 49  8'}, u'd41689b4e9c14c198e325c7f0654fc35': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894139', u'cab_type': u'sedan', u'driver_name': u'Phonenix D139', u'driver_lat': 12.950074, u'crn': u'2638', u'cab_number': u'KA 13  9'}, u'31a58696d9224acc9690f82ff9e582a1': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894218', u'cab_type': u'sedan', u'driver_name': u'Phonenix D218', u'driver_lat': 12.950074, u'crn': u'2481', u'cab_number': u'KA 21  8'}, u'ecd09d3399b04ad9a99c2f23d26e80c5': {u'driver_lng': 77.641727, u'eta': 2, u'car_model': u'Toyota Corolla', u'driver_number': u'4567894290', u'cab_type': u'sedan', u'driver_name': u'Phonenix D290', u'driver_lat': 12.950074, u'crn': u'2539', u'cab_number': u'KA 29  0'}}
+INFO: 2015-09-27 11:50:05,790 127.0.0.1 - - [27/Sep/2015 11:50:05] "GET /book?myLat=12.950072&myLong=77.642684&category=sedan HTTP/1.1" 200 -
+INFO: 2015-09-27 11:50:07,808 127.0.0.1 - - [27/Sep/2015 11:50:07] "GET /access_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:50:38,188 127.0.0.1 - - [27/Sep/2015 11:50:38] "GET /access_token HTTP/1.1" 200 -
+INFO: 2015-09-27 11:50:41,958 {"driver_lng": 77.641727, "eta": 2, "car_model": "Toyota Corolla", "driver_number": "4567894114", "cab_type": "sedan", "driver_name": "Phonenix D114", "driver_lat": 12.950074, "crn": "2643", "cab_number": "KA 11  4"}
+INFO: 2015-09-27 11:50:41,959 127.0.0.1 - - [27/Sep/2015 11:50:41] "GET /get_ride_info HTTP/1.1" 200 -
+INFO: 2015-09-27 11:51:25,041  * Detected change in 'app.py', reloading
+INFO: 2015-09-27 11:51:25,062  * Restarting with reloader

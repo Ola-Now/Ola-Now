@@ -25,6 +25,7 @@ counter = 100
 with open('config.json') as f:
     config = json.load(f)
 
+
 def generate_ride_headers(token):
     return {
         'Authorization': 'bearer %s' % token,
@@ -47,6 +48,7 @@ def signup():
 def submit():
     return render_template('debug.html')
 
+
 @app.route('/book', methods=['GET'])
 def book():
     url = "http://sandbox-t.olacabs.com/v1/bookings/create"
@@ -54,10 +56,10 @@ def book():
     params = {
         'pickup_lat': request.args['myLat'],
         'pickup_lng': request.args['myLong'],
-        'pickup_mode':"NOW",
+        'pickup_mode': "NOW",
         'category': request.args['category']
     }
-    headers={
+    headers = {
         'X-APP-TOKEN': config.get('x_app_token'),
         'Content-Type': 'application/json',
         'Authorization': 'Bearer %s' % session.get('access_token'),
@@ -67,7 +69,21 @@ def book():
         headers=headers,
         params=params,
     )
+    if session.get('access_token'):
+        new_dict = {session.get('access_token'): json.loads(response.text)}
+
+        with open("test.json") as json_file:
+            try:
+                data = json.load(json_file)
+            except ValueError:
+                data = {}
+        logging.info(data)
+        data.update(new_dict)
+
+        with open('test.json', 'w') as write_file:
+            json.dump(data, write_file)
     return response.text
+
 
 @app.route('/cancel', methods=['GET'])
 def cancel():
@@ -75,7 +91,7 @@ def cancel():
     params = {
         'crn': request.args['crn']
     }
-    headers={
+    headers = {
         'X-APP-TOKEN': config.get('x_app_token'),
         'Authorization': 'Bearer %s' % session.get('access_token')
     }
@@ -86,11 +102,12 @@ def cancel():
     )
     return response.text
 
+
 @app.route('/track', methods=['GET'])
 def track():
     url = "http://sandbox-t.olacabs.com/v1/bookings/track_ride"
 
-    headers={
+    headers = {
         'X-APP-TOKEN': config.get('x_app_token'),
         'Authorization': 'Bearer %s' % session.get('access_token')
     }
@@ -100,11 +117,12 @@ def track():
     )
     return response.text
 
+
 @app.route('/map', methods=['GET'])
 def map():
     url = "http://sandbox-t.olacabs.com/v1/bookings/track_ride"
 
-    headers={
+    headers = {
         'X-APP-TOKEN': config.get('x_app_token'),
         'Authorization': 'Bearer %s' % session.get('access_token')
     }
@@ -112,9 +130,9 @@ def map():
         url,
         headers=headers
     )
-    response_json=response.json()
-    lat=response_json.get('driver_lat')
-    long=response_json.get('driver_lng')
+    response_json = response.json()
+    lat = response_json.get('driver_lat')
+    long = response_json.get('driver_lng')
     logging.info(str(lat) + "," + str(long))
 
     return render_template(
@@ -123,6 +141,7 @@ def map():
         long=long
     )
 
+
 @app.route('/is_logged_in', methods=['GET'])
 def logged_in():
     if 'access_token' not in session:
@@ -130,19 +149,20 @@ def logged_in():
     else:
         return "true"
 
+
 @app.route('/save_token', methods=['POST'])
 def save_token():
-    post_json=request.get_json(force=True)
-    logging.info("in save token, token : "+ post_json['token'])
-    session['access_token'] =post_json['token']
-    logging.info("after assigning to sesion, token :"+session.get('access_token'))
+    post_json = request.get_json(force=True)
+    logging.info("in save token, token : " + post_json['token'])
+    session['access_token'] = post_json['token']
+    logging.info("after assigning to sesion, token :" + session.get('access_token'))
     return "successful"
+
 
 @app.route('/products', methods=['POST'])
 def products():
-
-    post_json=request.get_json(force=True)
-    category=request.args['category']
+    post_json = request.get_json(force=True)
+    category = request.args['category']
     url = config.get('base_ola_url') + 'products'
     if post_json['end_latitude'] != 0:
         params = {
@@ -151,14 +171,14 @@ def products():
             'drop_lat': post_json['end_latitude'],
             'drop_lng': post_json['end_longitude'],
             'category': category
-            }
+        }
 
     else:
         params = {
             'pickup_lat': post_json['start_latitude'],
             'pickup_lng': post_json['start_longitude'],
             'category': category
-            }
+        }
 
     response = app.requests_session.get(
         url,
@@ -170,19 +190,33 @@ def products():
         return 'There was an error', response.status_code
     return response.text;
 
+
 @app.route('/access_token', methods=['GET'])
 def access_token():
     return session.get('access_token')
 
+
 @app.route('/get_ride_info', methods=['GET'])
-def getRideInfo():
-    return session.get('access_token')
+def get_ride_info():
+    with open("test.json") as json_file:
+        try:
+            parsed_json = json.load(json_file)
+        except ValueError:
+            parsed_json = {}
+    logging.info(json.dumps(parsed_json[session.get('access_token')]))
+    if session.get('access_token'):
+        return json.dumps(parsed_json[session.get('access_token')])
+    else:
+        return "false"
+    return "false"
+
 
 def generate_ola_headers():
     return {
         'X-APP-TOKEN': config.get('x_app_token'),
         'Content-Type': 'application/json',
     }
+
 
 if __name__ == '__main__':
     app.debug = os.environ.get('FLASK_DEBUG', True)

@@ -8,6 +8,71 @@ function onPageDetailsReceived(pageDetails)  {
     myLong=pageDetails.myLong;
     destLat=pageDetails.latitude;
     destLong=pageDetails.longitude;
+
+    // check if user is logged in
+    var postUrl = 'http://localhost/is_logged_in';
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', postUrl, false);
+    xhr.setRequestHeader('Content-type', 'application/json');
+    xhr.onreadystatechange = function() { 
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200) {
+                parsedResponse = JSON.parse(xhr.responseText);
+                alert(parsedResponse);
+                //alert(typeof parsedResponse);
+                if (parsedResponse == true){                    
+                    var postUrl2 = 'http://localhost/get_ride_info';
+                    alert(postUrl2);
+                    var xhr2 = new XMLHttpRequest();
+                    xhr2.open('GET', postUrl2, false);
+                    xhr2.setRequestHeader('Content-type', 'application/json');
+                    xhr2.onreadystatechange = function() { 
+                        if (xhr2.readyState == 4) {
+                            if (xhr2.status == 200) {
+                                parsedResponse = JSON.parse(xhr2.responseText);
+                                alert(parsedResponse);
+                                container.innerHTML = "";
+
+                                crn = parsedResponse.crn;
+
+                                divContent = "<div class='products_results0'>You have already booked a cab.<div class='driver'><h3>Driver details</h3>";
+                                divContent += "<p><b>Name:</b> " + parsedResponse.driver_name;
+                                divContent += "<p/><p><b>Cab number:</b> " + parsedResponse.cab_number;
+                                divContent += "<p/><p><b>✆</b> " + parsedResponse.driver_number;
+                                divContent += "<p/><p><b>ETA:</b> " + parsedResponse.eta + " mins";
+                                divContent += "</p></div></div>";
+                                container.innerHTML += divContent;
+
+
+
+                            } else {
+                                statusDisplay.innerHTML = 'Error saving: ' + xhr2.statusText;
+                            }
+                        }
+                    };
+                    xhr2.send();
+                }
+                else{
+
+                }
+
+
+
+
+            }
+            else{
+                alert("Logged out");
+            }
+
+         }    
+        else {
+            statusDisplay.innerHTML = 'Error saving: ' + xhr.statusText;
+        }
+    };
+    xhr.send();    
+
+
+
     var destInfo = document.getElementById('destination-info');
     destInfo.innerHTML = "<b>Your location:</b> " + pageDetails.myLat + ", " + pageDetails.myLong + "<br/>";
     if( ! (destLat == undefined || typeof destLat == null) ) {

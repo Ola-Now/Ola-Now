@@ -46,6 +46,7 @@ def signup():
 
 @app.route('/team56', methods=['GET'])
 def submit():
+    #TO_DO: Handle negative response
     return render_template('debug.html')
 
 
@@ -69,6 +70,7 @@ def book():
         headers=headers,
         params=params,
     )
+    #TO_DO : Handle negative response
     if session.get('access_token'):
         new_dict = {session.get('access_token'): json.loads(response.text)}
 
@@ -100,6 +102,7 @@ def cancel():
         headers=headers,
         params=params,
     )
+    #TO_DO : Handle negative response
     return response.text
 
 
@@ -130,6 +133,7 @@ def map():
         url,
         headers=headers
     )
+    #TO_DO : Handle negative scenario
     response_json = response.json()
     lat = response_json.get('driver_lat')
     long = response_json.get('driver_lng')
@@ -185,6 +189,7 @@ def products():
         headers=generate_ola_headers(),
         params=params,
     )
+    #TO_DO : Handle nocabs scenario
 
     if response.status_code != 200:
         return 'There was an error', response.status_code
@@ -193,23 +198,24 @@ def products():
 
 @app.route('/access_token', methods=['GET'])
 def access_token():
-    return session.get('access_token')
+    if session.get('access_token'):
+        return session.get('access_token')
+    else:
+        return "No active access token present"
 
 
 @app.route('/get_ride_info', methods=['GET'])
 def get_ride_info():
-    try:
-        with open("test.json") as json_file:
-                parsed_json = json.load(json_file)
-    except ValueError:
-        parsed_json = {}
-    except IOError:
-        return "false"
-    logging.info(json.dumps(parsed_json[session.get('access_token')]))
+    with open("test.json") as json_file:
+        try:
+            parsed_json = json.load(json_file)
+        except (IOError,ValueError):
+            parsed_json = {}
     if session.get('access_token'):
-        return json.dumps(parsed_json[session.get('access_token')])
-    else:
-        return "false"
+        try:
+            return json.dumps(parsed_json[session.get('access_token')])
+        except KeyError:
+            return "false"
     return "false"
 
 

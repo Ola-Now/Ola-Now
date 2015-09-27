@@ -52,6 +52,32 @@ function cancelCab() {
 }
 
 function bookCab() {
+    var postUrl = 'http://localhost/is_logged_in';
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', postUrl, false);
+    xhr.setRequestHeader('Content-type', 'application/json');
+
+    xhr.onreadystatechange = function() { 
+        // If the request completed
+        if (xhr.readyState == 4) {
+            statusDisplay.innerHTML = '';
+            if (xhr.status == 200) {
+                // If it was a success
+                parsedResponse = JSON.parse(xhr.responseText);
+                if (!parsedResponse){
+                    chrome.tabs.create({'url': 'http://localhost/', }, function(window) {});
+                }
+            } else {
+                // Show what went wrong
+                statusDisplay.innerHTML = 'Error saving: ' + xhr.statusText;
+            }
+        }
+    };
+   
+    // Send the request and set status
+    xhr.send();
+
+
     var postUrl = 'http://localhost/book?category=sedan&myLat=' + myLat + '&myLong=' + myLong ;
     var xhr = new XMLHttpRequest();
     xhr.open('GET', postUrl, false);
